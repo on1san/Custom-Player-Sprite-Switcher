@@ -24,44 +24,43 @@ local FRONT_TRAINER_MAP = {
 
 local BACK_TRAINER_MAP = {
     ["badguy"] = "burglar",
-	["agatha"] = "agatha", 
-	["beauty"] = "beauty", 
-	["bird"] = "bird", 
-	["biker"] = "biker",
-	["blue"] = "rival3",
-	["brunette_girl"] = "lass",
-	["bruno"] = "bruno",
-	["channeler"] = "channeler",
-	["cook"] = "hiker",
-	["cooltrainer_f"] = "cooltrainerf",
-	["cooltrainer_m"] = "cooltrainerm",
-	["daisy"] = "lass",
-	["fairy"] = "fairy",
-	["fisher"] = "fisher",
-	["gambler"] = "gambler",
-	["gentleman"] = "gentleman",
-	--["giovanni"] = "giovanni",
-	["girl"] = "lass",
-	["hiker"] = "hiker",
-	["koga"] = "koga",
-	["lance"] = "lance",
-	["little_girl"] = "lass",
-	["lorelei"] = "lorelei",
-	["middle_aged_man"] = "cueball",
-	["middle_aged_woman"] = "lorelei",
-	["monster"] = "monster",
-	["mr_fuji"] = "gambler",
-	["oak"] = "prof.oak",
-	["rocket"] = "rocket",
-	["rocker"] = "rocker",
-	["sailor"] = "sailor",
-	["scientist"] = "scientist",
-	["seel"] = "seel",
-	["silph_worker_f"] = "lass",
-	["super_nerd"] = "youngster",
-	["swimmer"] = "swimmer",
-	["waiter"] = "gentleman",
-	["youngster"] = "youngster"
+    ["agatha"] = "agatha", 
+    ["beauty"] = "beauty", 
+    ["bird"] = "bird", 
+    ["biker"] = "biker",
+    ["blue"] = "rival3",
+    ["brunette_girl"] = "lass",
+    ["bruno"] = "bruno",
+    ["channeler"] = "channeler",
+    ["cook"] = "hiker",
+    ["cooltrainer_f"] = "cooltrainerf",
+    ["cooltrainer_m"] = "cooltrainerm",
+    ["daisy"] = "lass",
+    ["fairy"] = "fairy",
+    ["fisher"] = "fisher",
+    ["gambler"] = "gambler",
+    ["gentleman"] = "gentleman",
+    ["girl"] = "lass",
+    ["hiker"] = "hiker",
+    ["koga"] = "koga",
+    ["lance"] = "lance",
+    ["little_girl"] = "lass",
+    ["lorelei"] = "lorelei",
+    ["middle_aged_man"] = "cueball",
+    ["middle_aged_woman"] = "lorelei",
+    ["monster"] = "monster",
+    ["mr_fuji"] = "gambler",
+    ["oak"] = "prof.oak",
+    ["rocket"] = "rocket",
+    ["rocker"] = "rocker",
+    ["sailor"] = "sailor",
+    ["scientist"] = "scientist",
+    ["seel"] = "seel",
+    ["silph_worker_f"] = "lass",
+    ["super_nerd"] = "youngster",
+    ["swimmer"] = "swimmer",
+    ["waiter"] = "gentleman",
+    ["youngster"] = "youngster"
 }
 
 local POKEMON_MAP = {
@@ -133,7 +132,7 @@ return function(mod)
         local hiddenNames = getHiddenNames()
         local FOLDERS_TO_SCAN = {
             "assets/generated/sprites",           
-            mod.path .. "/assets/sprites"         
+            mod.path .. "/assets"         
         }
 
         local temp_characters = {}
@@ -204,21 +203,21 @@ return function(mod)
             label = "CHARACTER SPRITE",
             default = defaultIndex,
             choices = MENU_CHOICES,
-            help = "Choose the overworld character."
+            help = "Wähle den Charakter für die Overworld aus."
         },
         {
             key = "use_hide_lua",
             type = "toggle",
             label = "HIDE.LUA",
             default = true,
-            help = "Toggles the use of hide.lua"
+            help = "Aktiviert oder deaktiviert das Ausblenden über die hide.lua"
         },
         {
             key = "use_shortcuts",
             type = "toggle",
             label = "PGUP/PGDN SWITCH",
             default = false,
-            help = "Toggles the use of hotkeys."
+            help = "Schaltet die Hotkeys zum Wechseln der Charaktere ein oder aus."
         }
     })
 
@@ -280,16 +279,16 @@ return function(mod)
                 local originalName = info.name
                 local mappedName = isBack and (BACK_TRAINER_MAP[lowerName] or originalName) or (FRONT_TRAINER_MAP[lowerName] or originalName)
                 
-                local modSpriteDir = mod.path .. "/assets/sprites/"
+                local modAssetDir = mod.path .. "/assets/"
                 local pathsToTry = {}
                 
                 if isBack then
-                    table.insert(pathsToTry, modSpriteDir .. originalName .. "_back.png")
+                    table.insert(pathsToTry, modAssetDir .. originalName .. "_back.png")
                     table.insert(pathsToTry, info.folderPath .. "/" .. originalName .. "_back.png")
                     table.insert(pathsToTry, "assets/generated/battle/back/" .. originalName .. ".png")
                     table.insert(pathsToTry, "assets/generated/trainers/back/" .. originalName .. ".png")
                 else
-                    table.insert(pathsToTry, modSpriteDir .. originalName .. "_front.png")
+                    table.insert(pathsToTry, modAssetDir .. originalName .. "_front.png")
                     table.insert(pathsToTry, info.folderPath .. "/" .. originalName .. "_front.png")
                     table.insert(pathsToTry, "assets/generated/battle/trainers/" .. originalName .. ".png")
                     table.insert(pathsToTry, "assets/generated/trainers/" .. originalName .. ".png")
@@ -298,12 +297,12 @@ return function(mod)
 
                 if mappedName ~= originalName then
                     if isBack then
-                        table.insert(pathsToTry, modSpriteDir .. mappedName .. "_back.png")
+                        table.insert(pathsToTry, modAssetDir .. mappedName .. "_back.png")
                         table.insert(pathsToTry, info.folderPath .. "/" .. mappedName .. "_back.png")
                         table.insert(pathsToTry, "assets/generated/battle/back/" .. mappedName .. ".png")
                         table.insert(pathsToTry, "assets/generated/trainers/back/" .. mappedName .. ".png")
                     else
-                        table.insert(pathsToTry, modSpriteDir .. mappedName .. "_front.png")
+                        table.insert(pathsToTry, modAssetDir .. mappedName .. "_front.png")
                         table.insert(pathsToTry, info.folderPath .. "/" .. mappedName .. "_front.png")
                         table.insert(pathsToTry, "assets/generated/battle/trainers/" .. mappedName .. ".png")
                         table.insert(pathsToTry, "assets/generated/trainers/" .. mappedName .. ".png")
