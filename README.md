@@ -85,6 +85,12 @@ Add `_back` to the filename, like `leaf_back`.
 
 This is the player sprite you see when starting a battle.
 
+### Adding Sprites
+
+To add sprites, add them to the `/assets` folder in the .zip archive..
+
+* To make the changes visible: close the game, remove the mod and install it again.
+
 ## `hide.lua`
 
 Can be used to hide specific sprites. Extract the file to edit it.
@@ -100,12 +106,6 @@ For example: if you don't want to swim on land you remove the `--` in front of `
 1. Extract `hide.lua` from the `.zip` archive.
 2. Edit the file to hide specific sprites.
 3. Overwrite `hide.lua` in the `.zip` archive.
-
-* To make the changes visible: close the game, remove the mod and install it again.
-
-### Adding Sprites
-
-To add sprites, add them to the `/assets` folder in the .zip archive..
 
 * To make the changes visible: close the game, remove the mod and install it again.
 
