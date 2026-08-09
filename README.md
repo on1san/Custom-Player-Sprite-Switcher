@@ -48,6 +48,46 @@ The overworld spritesheets contain 6 × 16x16 sprites in a single `.png` image. 
 
 This means you can play as any NPC which walks around in the overworld. This also means additional sprites in this format inside the `asset` folder will appear in the mod spritelist.
 
+* agatha
+* beauty
+* bird
+* biker
+* blue
+* brunette_girl
+* bruno
+* channeler
+* cook
+* cooltrainer_f
+* cooltrainer_m
+* daisy
+* fairy
+* fisher
+* gambler
+* gentleman
+* giovanni
+* girl
+* hiker
+* koga
+* lance
+* little_girl
+* lorelei
+* middle_aged_man
+* middle_aged_woman
+* monster
+* mr_fuji
+* oak
+* rocket
+* rocker
+* sailor
+* scientist
+* seel
+* silph_worker_f
+* super_nerd
+* swimmer
+* waiter
+* youngster
+
+
 ### Limitations
 
 *There are no NPCs riding a bike except the biker, so there are no sprites for riding a bike.*
@@ -108,6 +148,8 @@ For example: if you don't want to swim on land you remove the `--` in front of `
 3. Overwrite `hide.lua` in the `.zip` archive.
 
 * To make the changes visible: close the game, remove the mod and install it again.
+
+
 
 ## Credits
 
