@@ -57,3 +57,7 @@ To make the changes visible: close the game, remove the mod and install it again
 * **CHARACTER SPRITE** — Selects the Character sprites used.
 * **HIDE.LUA** — Enables/Disables the hide.lua file.
 * **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
+
+
+## CREDITS
+Leaf Sprites made by MollyChan (https://www.spriters-resource.com/profile/mollychan)
