@@ -14,7 +14,7 @@ This means you can play as any NPC which walks around in the overworld.
 
 ##  Compatible sprite sizes:
 
-* **Overworld:** `16x96px`
+* **Overworld:** `16x96px => 6 x 16x16`
 * **Front:** `56x56px`
 * **Back:** `48x48px`
 * **Back:** `32x32px`
@@ -23,19 +23,19 @@ This means you can play as any NPC which walks around in the overworld.
 
 For example files check the assets folder.
 
-### Overworld (16x96px => 6 x 16x16)
+### Overworld 
 
 Use the name of the character, like `leaf`
 
 This is the character you walk around with.
 
-### Front (56x56px)
+### Front 
 
 Add `_front` to the filename, like `leaf_front`
 
 This is the Image on the trainer card.
 
-### Back (48x48px or 32x32px)
+### Back 
 
 Add `_back` to the filename, like `leaf_back`
 
