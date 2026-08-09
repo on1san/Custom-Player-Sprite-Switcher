@@ -4,6 +4,7 @@
 Change the player sprite in real time.
 
 Can also be used to switch Trainer Card Image and Player Back Sprite.
+
 This is an easy way to try out custom sprites or play with different characters.
 
 In Version 1.0 all 6 tile sprites extracted of the rom are used.
