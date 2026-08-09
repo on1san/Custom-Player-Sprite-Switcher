@@ -204,21 +204,21 @@ return function(mod)
             label = "CHARACTER SPRITE",
             default = defaultIndex,
             choices = MENU_CHOICES,
-            help = "Wähle den Charakter für die Overworld aus."
+            help = "Choose the overworld character."
         },
         {
             key = "use_hide_lua",
             type = "toggle",
             label = "HIDE.LUA",
             default = true,
-            help = "Aktiviert oder deaktiviert das Ausblenden über die hide.lua"
+            help = "Toggles the use of hide.lua"
         },
         {
             key = "use_shortcuts",
             type = "toggle",
             label = "PGUP/PGDN SWITCH",
             default = false,
-            help = "Schaltet die Hotkeys zum Wechseln der Charaktere ein oder aus."
+            help = "Toggles the use of hotkeys."
         }
     })
 
