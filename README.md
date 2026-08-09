@@ -87,7 +87,7 @@ This is the player sprite you see when starting a battle.
 
 ### Adding Sprites
 
-To add sprites, add them to the `/assets` folder in the .zip archive..
+To add sprites, add them to the `assets` folder in the .zip archive..
 
 * To make the changes visible: close the game, remove the mod and install it again.
 
