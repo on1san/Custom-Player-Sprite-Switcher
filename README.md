@@ -18,7 +18,7 @@ This means you can play as any NPC which walks around in the overworld.
 * **Back:** `48x48px`
 * **Back:** `32x32px`
 
-## Sprite Naming
+## Sprites requirements
 
 For example files check the assets folder.
 
