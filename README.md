@@ -8,6 +8,10 @@ Can also be used to switch Trainer Card Image and Player Back Sprite.
 
 This is an easy way to try out custom sprites or play with different characters.
 
+<p align="center">
+  <img src="https://i.imgur.com/CEJMNKj.gif" alt="OTF Player Switcher Demo">
+</p>
+
 ## Features
 
 In Version 1.0, all 6 tile sprites extracted from the ROM are used.
