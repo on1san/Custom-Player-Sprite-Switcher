@@ -52,7 +52,6 @@ Can be toggled in the mod options menu.
 ## `hide.lua`
 
 Can be used to hide specific sprites. Extract the file to edit it.
-
 All sprites are commented out which means all are selectable.
 
 Remove `--` to hide this sprite option ingame.
@@ -68,7 +67,6 @@ To make the changes visible: close the game, remove the mod and install it again
 * **CHARACTER SPRITE** — Selects the Character sprites used.
 * **HIDE.LUA** — Enables/Disables the hide.lua file.
 * **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
-
 
 ## CREDITS
 Leaf Sprites made by MollyChan (https://www.spriters-resource.com/profile/mollychan)
