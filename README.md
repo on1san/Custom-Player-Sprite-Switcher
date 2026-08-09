@@ -20,7 +20,7 @@ The GIF above shows the effect ingame when pressing a shortcut button.
 * Switch your Trainer Card Image.
 * Switch your Player Back Sprite.
 * Use custom sprites.
-* Play as NPCs which walk around in the overworld.
+* Play as NPCs.
 * Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
 ## Compatible Sprite Sizes
