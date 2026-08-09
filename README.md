@@ -7,23 +7,21 @@ Change your player sprite in real time.
 Can also be used to switch Trainer Card Image and Player Back Sprite.
 
 This is an easy way to try out custom sprites or play with different characters.
-The gif below shows the effect ingame when pressing a shortcut button.
 
 <p align="center">
-  <img src="https://i.imgur.com/Oj1pFyY.gif" alt="OTF Player Switcher Demo">
+  <img src="https://i.imgur.com/CEJMNKj.gif" alt="OTF Player Switcher in-game demonstration">
 </p>
+
+The GIF above shows the effect ingame when pressing a shortcut button.
 
 ## Features
 
-In Version 1.0, all 6 tile sprites extracted from the ROM are used.
-
-This means you can play as any NPC which walks around in the overworld.
-
-### Limitations
-
-*There are no NPCs riding a bike except the biker, so there are no sprites for riding a bike.*
-
-*There are also no NPC backsprites except for the old man, so there are no special backsprites except for Giovanni and Leaf right now.*
+* Change your overworld player sprite in real time.
+* Switch your Trainer Card Image.
+* Switch your Player Back Sprite.
+* Use custom sprites.
+* Play as NPCs which walk around in the overworld.
+* Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
 ## Compatible Sprite Sizes
 
@@ -32,7 +30,19 @@ This means you can play as any NPC which walks around in the overworld.
 * **Back:** `48x48px`
 * **Back:** `32x32px`
 
+## Available Sprites
+
+In Version 1.0, all 6 tile sprites extracted from the ROM are used.
+
 The overworld spritesheets contain 6 × 16x16 sprites in a single `.png` image. These files are located in the `sprites` and `battle/trainers` folders of `gen1recomp`.
+
+This means you can play as any NPC which walks around in the overworld.
+
+### Limitations
+
+*There are no NPCs riding a bike except the biker, so there are no sprites for riding a bike.*
+
+*There are also no NPC backsprites except for the old man, so there are no special backsprites except for Giovanni and Leaf right now.*
 
 ## Sprite Naming
 
@@ -63,6 +73,12 @@ This is the player sprite you see when starting a battle.
 
 Can be toggled in the mod options menu.
 
+## Mod Options
+
+* **CHARACTER SPRITE** — Selects the Character sprites used.
+* **HIDE.LUA** — Enables/Disables the `hide.lua` file.
+* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
+
 ## `hide.lua`
 
 Can be used to hide specific sprites. Extract the file to edit it.
@@ -82,12 +98,6 @@ Remove `--` to hide this sprite option ingame.
 To add sprites, add them to the `/assets` folder.
 
 To make the changes visible: close the game, remove the mod and install it again.
-
-## Mod Options
-
-* **CHARACTER SPRITE** — Selects the Character sprites used.
-* **HIDE.LUA** — Enables/Disables the `hide.lua` file.
-* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
 
 ## Credits
 
