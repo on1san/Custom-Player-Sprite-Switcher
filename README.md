@@ -1,7 +1,8 @@
 # OTF Player Switcher
 
 **Overworld On the Fly Player Sprite Switcher**
-Change the player sprite in real time.
+
+Change your player sprite in real time.
 
 Can also be used to switch Trainer Card Image and Player Back Sprite.
 
