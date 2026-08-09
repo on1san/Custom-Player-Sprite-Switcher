@@ -14,6 +14,8 @@ Can also be used to switch Trainer Card Image and Player Back Sprite.
 
 ## Sprite Naming
 
+For example files check the assets folder.
+
 ### Overworld
 
 Use the name of the character, like `leaf`
