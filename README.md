@@ -44,7 +44,7 @@ This is the player sprite you see when starting a battle.
 
 ## Shortcuts
 
-**PageUp & PageDown**
+<kbd>PageUp</kbd> & <kbd>PageDown</kbd>
 
 Can be toggled in the mod options menu.
 
