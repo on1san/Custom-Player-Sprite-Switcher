@@ -42,7 +42,7 @@ This means you can play as any NPC which walks around in the overworld.
 
 *There are no NPCs riding a bike except the biker, so there are no sprites for riding a bike.*
 
-*There are also no NPC backsprites except for the old man, so there are no special backsprites except for Giovanni and Leaf right now.*
+*There are also no NPC backsprites except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
 
 ## Sprite Naming
 
