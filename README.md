@@ -5,6 +5,12 @@ Change the player sprite in real time.
 
 Can also be used to switch Trainer Card Image and Player Back Sprite.
 
+In Version 1.0 all 6 tile sprites extracted from the rom are used.
+These files lie in the "sprites" and "battle/trainers" folders of gen1recomp.
+This means you can play as any NPC which walks around in the overworld.
+There are no NPCs riding a bike except the biker, so there are not sprites for riding a bike.
+
+
 ## Supported Sprites
 
 * **Overworld:** `16x96px`
