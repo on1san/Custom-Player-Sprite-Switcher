@@ -23,12 +23,15 @@ The GIF above shows the effect ingame when pressing a shortcut button.
 * Play as NPCs.
 * Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
-## Compatible Sprite Sizes
+## Mod Options
 
-* **Overworld:** `16x96px`
-* **Front:** `56x56px`
-* **Back:** `48x48px`
-* **Back:** `32x32px`
+* **CHARACTER SPRITE** — Selects the Character sprites used.
+* **HIDE.LUA** — Enables/Disables the `hide.lua` file.
+* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
+
+<p align="center">
+  <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
+</p>
 
 ## Available Sprites
 
@@ -45,6 +48,13 @@ This means you can play as any NPC which walks around in the overworld. This als
 *There are also no NPC backsprites except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
 
 *The initial idea of the mod was to change the overworld player sprite.*
+
+## Compatible Sprite Sizes
+
+* **Overworld:** `16x96px`
+* **Front:** `56x56px`
+* **Back:** `48x48px`
+* **Back:** `32x32px`
 
 ## Sprite Naming
 
@@ -74,16 +84,6 @@ This is the player sprite you see when starting a battle.
 * <kbd>PageDown</kbd> — Switch to the next sprite
 
 Can be toggled in the mod options menu.
-
-## Mod Options
-
-* **CHARACTER SPRITE** — Selects the Character sprites used.
-* **HIDE.LUA** — Enables/Disables the `hide.lua` file.
-* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
-
-<p align="center">
-  <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
-</p>
 
 ## `hide.lua`
 
