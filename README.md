@@ -16,8 +16,6 @@ This is an easy way to try out custom sprites or play with different characters.
 
 In Version 1.0, all 6 tile sprites extracted from the ROM are used.
 
-The overworld spritesheets contain 6 × 16x16 sprites in a single `.png` image. These files are located in the `sprites` and `battle/trainers` folders of `gen1recomp`.
-
 This means you can play as any NPC which walks around in the overworld.
 
 ### Limitations
@@ -32,6 +30,8 @@ This means you can play as any NPC which walks around in the overworld.
 * **Front:** `56x56px`
 * **Back:** `48x48px`
 * **Back:** `32x32px`
+
+The overworld spritesheets contain 6 × 16x16 sprites in a single `.png` image. These files are located in the `sprites` and `battle/trainers` folders of `gen1recomp`.
 
 ## Sprite Naming
 
