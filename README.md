@@ -26,7 +26,7 @@ The GIF above shows the effect ingame when pressing a shortcut button.
 ## Mod Options
 
 * **CHARACTER SPRITE** — Selects the Character sprites used.
-* **HIDE.LUA** — Enables/Disables the `hide.lua` file.
+* **HIDE.LUA** — Enables/Disables the `hide.lua` file, which contains sprites to hide.
 * **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
 
 <p align="center">
