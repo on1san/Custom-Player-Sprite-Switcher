@@ -28,13 +28,13 @@ Use the name of the character, like `leaf`
 
 This is the character you walk around with.
 
-### Front
+### Front (56x56px)
 
 Add `_front` to the filename, like `leaf_front`
 
 This is the Image on the trainer card.
 
-### Back
+### Back (48x48px or 32x32px)
 
 Add `_back` to the filename, like `leaf_back`
 
