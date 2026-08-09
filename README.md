@@ -22,7 +22,7 @@ This means you can play as any NPC which walks around in the overworld.
 
 For example files check the assets folder.
 
-### Overworld `16x96px`
+### Overworld (16x96px)
 
 Use the name of the character, like `leaf`
 
