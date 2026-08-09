@@ -81,6 +81,10 @@ Can be toggled in the mod options menu.
 * **HIDE.LUA** — Enables/Disables the `hide.lua` file.
 * **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
 
+<p align="center">
+  <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
+</p>
+
 ## `hide.lua`
 
 Can be used to hide specific sprites. Extract the file to edit it.
