@@ -94,12 +94,14 @@ Remove `--` to hide this sprite option ingame.
 1. Extract `hide.lua` from the `.zip` archive.
 2. Edit the file to hide specific sprites.
 3. Overwrite `hide.lua` in the `.zip` archive.
+   
+* To make the changes visible: close the game, remove the mod and install it again.
 
 ### Adding Sprites
 
 To add sprites, add them to the `/assets` folder.
 
-To make the changes visible: close the game, remove the mod and install it again.
+* To make the changes visible: close the game, remove the mod and install it again.
 
 ## Credits
 
