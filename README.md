@@ -9,7 +9,7 @@ Can also be used to switch Trainer Card Image and Player Back Sprite.
 This is an easy way to try out custom sprites or play with different characters.
 
 <p align="center">
-  <img src="https://i.imgur.com/CEJMNKj.gif" alt="OTF Player Switcher in-game demonstration">
+  <img src="https://i.imgur.com/Oj1pFyY.gif" alt="OTF Player Switcher in-game demonstration">
 </p>
 
 The GIF above shows the effect ingame when pressing a shortcut button.
