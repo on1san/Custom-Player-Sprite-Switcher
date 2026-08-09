@@ -33,6 +33,13 @@ The GIF above shows the effect ingame when pressing a shortcut button.
   <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
 </p>
 
+## Shortcuts
+
+* <kbd>PageUp</kbd> — Switch to the previous sprite
+* <kbd>PageDown</kbd> — Switch to the next sprite
+
+Can be toggled in the mod options menu.
+
 ## Available Sprites
 
 In Version 1.0, all 6 tile sprites extracted from the ROM are used.
@@ -77,13 +84,6 @@ This is the image on the Trainer Card.
 Add `_back` to the filename, like `leaf_back`.
 
 This is the player sprite you see when starting a battle.
-
-## Shortcuts
-
-* <kbd>PageUp</kbd> — Switch to the previous sprite
-* <kbd>PageDown</kbd> — Switch to the next sprite
-
-Can be toggled in the mod options menu.
 
 ## `hide.lua`
 
