@@ -52,7 +52,7 @@ This means you can play as any NPC which walks around in the overworld. This als
 
 *There are no NPCs riding a bike except the biker, so there are no sprites for riding a bike.*
 
-*There are also no NPC backsprites except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
+*There are also no NPC backsprites in the original rom except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
 
 *The initial idea of the mod was to change the overworld player sprite.*
 
