@@ -7,6 +7,7 @@ Can also be used to switch Trainer Card Image and Player Back Sprite.
 This is an easy way to try out custom sprites or play with different characters.
 
 In Version 1.0 all 6 tile sprites extracted of the rom are used.
+The overworld spritesheets contain of 6 x 16x16 sprites in a single .png image.
 These files lie in the "sprites" and "battle/trainers" folders of gen1recomp.
 This means you can play as any NPC which walks around in the overworld.
 *There are no NPCs riding a bike except the biker, so there are not sprites for riding a bike.*
@@ -14,7 +15,7 @@ This means you can play as any NPC which walks around in the overworld.
 
 ##  Compatible sprite sizes:
 
-* **Overworld:** `16x96px => 6 x 16x16`
+* **Overworld:** `16x96px`
 * **Front:** `56x56px`
 * **Back:** `48x48px`
 * **Back:** `32x32px`
