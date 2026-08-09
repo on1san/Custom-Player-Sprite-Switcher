@@ -89,6 +89,8 @@ All sprites are commented out, which means all are selectable.
 
 Remove `--` to hide this sprite option ingame.
 
+For example: if you don't want to swim on land you remove the `--` in front of `"seel",` and `"swimmer",`.
+
 ### Editing `hide.lua`
 
 1. Extract `hide.lua` from the `.zip` archive.
