@@ -44,6 +44,8 @@ This means you can play as any NPC which walks around in the overworld.
 
 *There are also no NPC backsprites except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
 
+*The initial idea of the mod was to change the overworld player sprite.*
+
 ## Sprite Naming
 
 For example files, check the `assets` folder.
