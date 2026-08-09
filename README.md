@@ -35,6 +35,8 @@ This is the player sprite you see when starting a battle.
 
 **PageUp & PageDown**
 
+Can be toggled in the mod options menu.
+
 ## `hide.lua`
 
 Can be used to hide specific sprites. Extract the file to edit it.
