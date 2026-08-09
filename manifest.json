@@ -1,0 +1,13 @@
+{
+  "id": "otf-player-switcher",
+  "name": "OTF Player Switcher",
+  "category": "GRAPHICS",
+  "priority": 100,
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "version": "1.0",
+  "entry": "main.lua",
+  "api": 2,
+  "description": "Overworld On the fly Player Sprite Switcher. Can also be used to switch Trainer Card Image and Player Back Sprite. Shortcuts - PageUp PageDown. hide.lua can be used to hide specific sprites."
+}
