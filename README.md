@@ -44,7 +44,8 @@ This is the player sprite you see when starting a battle.
 
 ## Shortcuts
 
-<kbd>PageUp</kbd> & <kbd>PageDown</kbd>
+- <kbd>PageUp</kbd> — Switch to the previous sprite
+- <kbd>PageDown</kbd> — Switch to the next sprite
 
 Can be toggled in the mod options menu.
 
