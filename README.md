@@ -23,11 +23,12 @@ The GIF shows the effect ingame when pressing a shortcut button.
 * Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
 
-<p align="center">   
-  <img src="https://i.imgur.com/7CruJCx.png" ">
-  <img src="https://i.imgur.com/fwwypPi.png" ">
-  <img src="https://i.imgur.com/T3OIe3q.png" ">
-  <img src="https://i.imgur.com/ZYbae0g.png" ">
+<p align="center">
+  <img src="https://i.imgur.com/dt420xU.png">
+  <img src="https://i.imgur.com/ZpznmkK.png">
+  <img src="https://i.imgur.com/S5Tz8Wa.png">
+  <img src="https://i.imgur.com/ilGNNwE.png">
+ <img src="https://i.imgur.com/3lLcHPq.png">
 </p>
 
 ## Mod Options
