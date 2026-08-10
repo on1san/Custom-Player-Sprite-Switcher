@@ -14,6 +14,16 @@ This is an easy way to try out custom sprites or to play with different characte
 
 The GIF above shows the effect ingame when pressing a shortcut button.
 
+<p align="center">
+  <img src="https://i.imgur.com/7CruJCx.png" ">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/T3OIe3q.png" ">
+  <img src="https://i.imgur.com/fwwypPi.png" ">
+  <img src="https://i.imgur.com/ZYbae0g.png" ">
+</p>
+
 ## Features
 
 * Change your overworld player sprite in real time.
@@ -32,6 +42,7 @@ The GIF above shows the effect ingame when pressing a shortcut button.
 <p align="center">
   <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
 </p>
+
 
 ## Shortcuts
 
