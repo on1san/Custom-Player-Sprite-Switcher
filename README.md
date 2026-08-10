@@ -28,9 +28,9 @@ The GIF shows the effect ingame when pressing a shortcut button.
 
 <p align="center">
   <img src="https://i.imgur.com/dt420xU.png">
-  <img src="https://i.imgur.com/ZpznmkK.png">
   <img src="https://i.imgur.com/S5Tz8Wa.png">
   <img src="https://i.imgur.com/ilGNNwE.png">
+    <img src="https://i.imgur.com/ZpznmkK.png">
  <img src="https://i.imgur.com/3lLcHPq.png">
 </p>
 
