@@ -22,6 +22,13 @@ The GIF shows the effect ingame when pressing a shortcut button.
 * Play as NPCs.
 * Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
+## Shortcuts
+
+* <kbd>PageUp</kbd> — Switch to the previous sprite
+* <kbd>PageDown</kbd> — Switch to the next sprite
+
+Can be toggled in the mod options menu.
+
 ---
 
 *Take a sprite sheet, divide it into separate assets to use them ingame.*
@@ -43,14 +50,6 @@ The GIF shows the effect ingame when pressing a shortcut button.
 <p align="center">
   <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
 </p>
-
-
-## Shortcuts
-
-* <kbd>PageUp</kbd> — Switch to the previous sprite
-* <kbd>PageDown</kbd> — Switch to the next sprite
-
-Can be toggled in the mod options menu.
 
 ## Compatible Sprite Sizes
 
