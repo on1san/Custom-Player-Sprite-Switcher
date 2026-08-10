@@ -1,6 +1,6 @@
-# OTF Player Switcher
+# Custom Player Sprite Switcher
 
-**Overworld On-the-Fly Player Sprite Switcher**
+**Overworld On-the-Fly Sprite Changer**
 
 Change your player sprite in real time.
 
@@ -39,6 +39,59 @@ The GIF above shows the effect ingame when pressing a shortcut button.
 * <kbd>PageDown</kbd> — Switch to the next sprite
 
 Can be toggled in the mod options menu.
+
+## Compatible Sprite Sizes
+
+* **Overworld:** `16x96px`
+* **Front:** `56x56px`
+* **Back:** `48x48px`
+* **Back:** `32x32px`
+
+## Sprite Naming
+
+For example files, check the `assets` folder.
+
+### Overworld
+
+Use the name of the character, like `leaf`.
+
+This is the character you walk around with.
+
+### Front
+
+Add `_front` to the filename, like `leaf_front`.
+
+This is the image on the Trainer Card.
+
+### Back
+
+Add `_back` to the filename, like `leaf_back`.
+
+This is the player sprite you see when starting a battle.
+
+### Adding Sprites
+
+To add sprites, add them to the `assets` folder in the .zip archive..
+
+* To make the changes visible: close the game, remove the mod and install it again.
+
+## `hide.lua`
+
+Can be used to hide specific sprites. Extract the file to edit it.
+
+All sprites are commented out, which means all are selectable.
+
+Remove `--` to hide this sprite option ingame.
+
+For example: if you don't want to swim on land you remove the `--` in front of `"seel",` and `"swimmer",`.
+
+### Editing `hide.lua`
+
+1. Extract `hide.lua` from the `.zip` archive.
+2. Edit the file to hide specific sprites.
+3. Overwrite `hide.lua` in the `.zip` archive.
+
+* To make the changes visible: close the game, remove the mod and install it again.
 
 ## Available Sprites
 
@@ -95,59 +148,6 @@ This means you can play as any NPC which walks around in the overworld. This als
 *There are also no NPC backsprites in the original rom except for the old man, so there are no special backsprites except for custom ones like Giovanni and Leaf right now.*
 
 *The initial idea of the mod was to change the overworld player sprite.*
-
-## Compatible Sprite Sizes
-
-* **Overworld:** `16x96px`
-* **Front:** `56x56px`
-* **Back:** `48x48px`
-* **Back:** `32x32px`
-
-## Sprite Naming
-
-For example files, check the `assets` folder.
-
-### Overworld
-
-Use the name of the character, like `leaf`.
-
-This is the character you walk around with.
-
-### Front
-
-Add `_front` to the filename, like `leaf_front`.
-
-This is the image on the Trainer Card.
-
-### Back
-
-Add `_back` to the filename, like `leaf_back`.
-
-This is the player sprite you see when starting a battle.
-
-### Adding Sprites
-
-To add sprites, add them to the `assets` folder in the .zip archive..
-
-* To make the changes visible: close the game, remove the mod and install it again.
-
-## `hide.lua`
-
-Can be used to hide specific sprites. Extract the file to edit it.
-
-All sprites are commented out, which means all are selectable.
-
-Remove `--` to hide this sprite option ingame.
-
-For example: if you don't want to swim on land you remove the `--` in front of `"seel",` and `"swimmer",`.
-
-### Editing `hide.lua`
-
-1. Extract `hide.lua` from the `.zip` archive.
-2. Edit the file to hide specific sprites.
-3. Overwrite `hide.lua` in the `.zip` archive.
-
-* To make the changes visible: close the game, remove the mod and install it again.
 
 
 
