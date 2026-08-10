@@ -2,16 +2,16 @@
 
 **Overworld On-the-Fly Sprite Changer**
 
+<p align="center">
+  <img src="https://i.imgur.com/Oj1pFyY.gif" alt="OTF Player Switcher in-game demonstration">
+</p>
+
 Change your player sprite in real time.
 
 Can also be used to switch Trainer Card Image and Player Back Sprite.
 
 This is an easy way to try out custom sprites or to play with different characters.
 The GIF shows the effect ingame when pressing a shortcut button.
-
-<p align="center">
-  <img src="https://i.imgur.com/Oj1pFyY.gif" alt="OTF Player Switcher in-game demonstration">
-</p>
 
 <p align="center">
   <img src="https://i.imgur.com/7CruJCx.png" ">
