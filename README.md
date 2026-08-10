@@ -31,7 +31,7 @@ Can be toggled in the mod options menu.
 
 ---
 
-*Take a sprite sheet, divide it into separate assets to use them ingame.*
+*Take a sprite sheet and divide it into separate assets to use them ingame.*
 
 <p align="center">
   <img src="https://i.imgur.com/dt420xU.png">
