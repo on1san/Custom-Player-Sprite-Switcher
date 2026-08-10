@@ -13,6 +13,15 @@ Can also be used to switch Trainer Card Image and Player Back Sprite.
 This is an easy way to try out custom sprites or to play with different characters.
 The GIF shows the effect ingame when pressing a shortcut button.
 
+## Features
+
+* Change your overworld player sprite in real time.
+* Switch your Trainer Card Image.
+* Switch your Player Back Sprite.
+* Use custom sprites.
+* Play as NPCs.
+* Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
+* 
 <p align="center">
   <img src="https://i.imgur.com/7CruJCx.png" ">
 </p>
@@ -22,15 +31,6 @@ The GIF shows the effect ingame when pressing a shortcut button.
   <img src="https://i.imgur.com/T3OIe3q.png" ">
   <img src="https://i.imgur.com/ZYbae0g.png" ">
 </p>
-
-## Features
-
-* Change your overworld player sprite in real time.
-* Switch your Trainer Card Image.
-* Switch your Player Back Sprite.
-* Use custom sprites.
-* Play as NPCs.
-* Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
 ## Mod Options
 
