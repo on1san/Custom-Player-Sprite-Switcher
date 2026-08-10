@@ -22,6 +22,8 @@ The GIF shows the effect ingame when pressing a shortcut button.
 * Play as NPCs.
 * Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
+---
+
 *Take a sprite sheet, divide it into separate assets to use them ingame.*
 
 <p align="center">
