@@ -169,4 +169,4 @@ This means you can play as any NPC which walks around in the overworld. This als
 
 ## Credits
 
-Leaf Sprites made by [MollyChan](https://www.spriters-resource.com/profile/mollychan).
+Leaf Sprites by Molly
