@@ -84,9 +84,9 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 
 * To make the changes visible: close the game, remove the mod and install it again.
 
-  For example files, check the `assets` folder.
+For example files, check the `assets` folder.
 
-  ## Mod Options
+## Mod Options
 
 * **CHARACTER SPRITE** — Selects the Character sprites used.
 * **HIDE.LUA** — Enables/Disables the `hide.lua` file, which contains sprites to hide.
