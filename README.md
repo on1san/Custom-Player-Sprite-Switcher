@@ -56,14 +56,6 @@ Can be toggled in the mod options menu.
   <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
 </p>
 
-## Compatible Sprite Sizes
-
-* **Overworld:** `16x96px`
-* **Front:** `56x56px`
-* **Front:** `40x56px`
-* **Back:** `48x48px`
-* **Back:** `32x32px`
-
 ## Sprite Naming & Dimensions
 
 For example files, check the `assets` folder.
@@ -74,17 +66,24 @@ Use the name of the character, like `leaf.png`.
 
 This is the character you walk around with.
 
-### Front
+### Front (`40x56px` or `56x56px`)
 
 Add `_front` to the filename, like `leaf_front.png`.
 
 This is the image on the Trainer Card.
 
-### Back
+### Back (`48x48px` or `32x32px`)
 
 Add `_back` to the filename, like `leaf_back.png`.
 
 This is the player sprite you see when starting a battle.
+
+### Fishing Sprites (`3 different files: `16x8px`)
+
+Add `_fish_side, fish_front, fish_back` to the filenames, like `leaf_fish_side.png, leaf_fish_front.png, leaf_fish_back.png`.
+
+This is the player sprite when using a fishing rod.
+
 
 ### Adding Sprites
 
