@@ -71,7 +71,7 @@ Create assets individually by yourself (see [Sprite Naming & Dimensions](#sprite
 
 Or use the Sample Template from 
 
-> https://inject.sigkill.tech/injector/sprite 
+> **https://inject.sigkill.tech/injector/sprite**
 
 to import your own spritesheet with 
 
