@@ -32,7 +32,7 @@ Can be toggled in the mod options menu.
 ---
 ## Option 1: Use Crystal Clear Sprite Sheets + Converter
 
-*Take a Crystaö Clear Sprite Sheet and generate assets automatically*
+*Take a Crystal Clear Sprite Sheet and generate assets automatically*
 
 ## Option 2: Cutting existing Sprite Sheets
 
