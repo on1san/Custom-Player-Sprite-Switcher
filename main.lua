@@ -1,3 +1,23 @@
+
+local SCALE_64 = 0.5
+local OFFSET_X_64 = 8
+local OFFSET_Y_64 = 56
+
+local SCALE_48 = 0.5
+local OFFSET_X_48 = 8
+local OFFSET_Y_48 = 48
+
+local SCALE_56 = 1
+local OFFSET_X_56 = 0
+local OFFSET_Y_56 = 0
+
+local SCALE_40 = 1
+local OFFSET_X_40 = 11
+local OFFSET_Y_40 = 0
+
+local useHideLua = true
+local shortcutsEnabled = true
+
 local SPRITE_CONFIG = {
     walk = { suffix = ".png",       id = "SPRITE_RED" },
     bike = { suffix = "_bike.png",  id = "SPRITE_RED_BIKE" }
@@ -33,7 +53,7 @@ local BACK_TRAINER_MAP = {
     ["bruno"] = "bruno",
     ["channeler"] = "channeler",
     ["cook"] = "hiker",
-    ["cooltrainer_f"] = "cooltrainerf",
+    ["cooltrainer_f"] = "lass",
     ["cooltrainer_m"] = "cooltrainerm",
     ["daisy"] = "lass",
     ["fairy"] = "fairy",
@@ -70,15 +90,13 @@ local POKEMON_MAP = {
     ["fairy"] = "clefairy"
 }
 
-local useHideLua = true
-
-local SCALE_64 = 0.5
-local OFFSET_X_64 = 8
-local OFFSET_Y_64 = 56
-
-local SCALE_48 = 0.5
-local OFFSET_X_48 = 8
-local OFFSET_Y_48 = 48
+local DISPLAY_NAME_MAP = {
+    ["middle_aged_woman"] = "Middle Aged (W)",
+    ["middle_aged_man"] = "Middle Aged (M)",
+	["cooltrainer_f"] = "Cool Trainer (F)",
+    ["cooltrainer_m"] = "Cool Trainer (M)",
+	["silph_worker_f"] = "Silph Worker (F)",
+}
 
 if not love.graphics._custom_hd_registry then
     love.graphics._custom_hd_registry = setmetatable({}, {__mode = "k"})
@@ -94,7 +112,6 @@ return function(mod)
     local game
     local currentIndex = 1 
     local defaultIndex = 1 
-    local shortcutsEnabled = false 
     
     local CHARACTER_LIST = {} 
     local MENU_CHOICES = {}
@@ -102,6 +119,9 @@ return function(mod)
     local originalPlayerPics = nil
 
     local function formatDisplayName(name)
+	if DISPLAY_NAME_MAP[name] then
+        return DISPLAY_NAME_MAP[name]
+    end
         local cleanName = name:gsub("_", " ")
         cleanName = cleanName:gsub("(%a)([%w]*)", function(first, rest)
             return first:upper() .. rest:lower()
@@ -111,29 +131,45 @@ return function(mod)
 
     local function getHiddenNames()
         local hiddenMap = {}
-        if not useHideLua then return hiddenMap end 
-        
+
+        -- HIDE.LUA OFF: completely ignore hide.lua.
+        if not useHideLua then
+            return hiddenMap
+        end
+
+        -- HIDE.LUA ON: read hide.lua and use its returned table
+        -- as the list of characters that should be hidden.
         local chunk, err = mod:read("hide.lua")
+
         if chunk then
-            local ok, list = pcall(load(chunk))
-            if ok and type(list) == "table" then
-                for _, name in ipairs(list) do
-                    if type(name) == "string" then
-                        hiddenMap[name:lower()] = true
+            local load_ok, hide_function = pcall(load, chunk)
+
+            if load_ok and type(hide_function) == "function" then
+                local run_ok, list = pcall(hide_function)
+
+                if run_ok and type(list) == "table" then
+                    for _, name in ipairs(list) do
+                        if type(name) == "string" then
+                            hiddenMap[name:lower()] = true
+                        end
                     end
                 end
             end
         end
+
+        -- Red must always remain available.
         hiddenMap["red"] = false
+
         return hiddenMap
     end
 
     local function loadCharacters()
         local hiddenNames = getHiddenNames()
-        local FOLDERS_TO_SCAN = {
-            "assets/generated/sprites",           
-            mod.path .. "/assets"         
-        }
+        local FOLDERS_TO_SCAN = {}
+
+        table.insert(FOLDERS_TO_SCAN, "assets/generated/sprites")
+        
+        table.insert(FOLDERS_TO_SCAN, mod.path .. "/assets")
 
         local temp_characters = {}
 
@@ -146,8 +182,10 @@ return function(mod)
             if ok and type(files) == "table" then
                 for _, file in ipairs(files) do
                     if file:match("%.png$") 
-                       and not file:match("_bike%.png$") 
-                       and not file:match("_fish%.png$") 
+                       and not file:match("bike%.png$") 
+                       and not file:match("_fish_back%.png$") 
+					   and not file:match("_fish_front%.png$") 
+					   and not file:match("_fish_side%.png$") 
                        and not file:match("_surf%.png$") 
                        and not file:match("_front%.png$")
                        and not file:match("_back%.png$") then
@@ -196,28 +234,28 @@ return function(mod)
 
     loadCharacters()
 
-    mod.options:define({
+  mod.options:define({
         {
             key = "custom_char_index",
             type = "choice",
             label = "CHARACTER SPRITE",
             default = defaultIndex,
             choices = MENU_CHOICES,
-            help = "Wähle den Charakter für die Overworld aus."
+            help = "Choose your character"
         },
         {
             key = "use_hide_lua",
             type = "toggle",
             label = "HIDE.LUA",
             default = true,
-            help = "Aktiviert oder deaktiviert das Ausblenden über die hide.lua"
+            help = "Toggles hide.lua"
         },
         {
             key = "use_shortcuts",
             type = "toggle",
             label = "PGUP/PGDN SWITCH",
             default = false,
-            help = "Schaltet die Hotkeys zum Wechseln der Charaktere ein oder aus."
+            help = "Toggles shortcut"
         }
     })
 
@@ -325,8 +363,20 @@ return function(mod)
             pPics.back = backPath
 
             if frontPath then
-                hd_paths[frontPath] = false
-            end
+    local ok, imgData = pcall(love.image.newImageData, frontPath)
+
+    if ok and imgData then
+        local width = imgData:getWidth()
+
+        if width == 40 or width == 48 or width == 56 or width == 64 then
+            hd_paths[frontPath] = true
+        else
+            hd_paths[frontPath] = false
+        end
+    else
+        hd_paths[frontPath] = false
+    end
+end
 
             if backPath then
                 local ok, imgData = pcall(love.image.newImageData, backPath)
@@ -354,7 +404,7 @@ return function(mod)
         local short_ok, short_val = pcall(mod.options.get, mod.options, "use_shortcuts")
         if short_ok and short_val ~= nil then shortcutsEnabled = short_val end
         
-        local hide_ok, hide_val = pcall(mod.options.get, mod.options, "use_hide_lua")
+      local hide_ok, hide_val = pcall(mod.options.get, mod.options, "use_hide_lua")
         if hide_ok and hide_val ~= nil and useHideLua ~= hide_val then
             useHideLua = hide_val
             loadCharacters()
@@ -399,15 +449,21 @@ return function(mod)
         if payload and payload.mod == mod.id then
             if payload.key == "custom_char_index" then
                 currentIndex = payload.value
+
                 if game and game.save and game.save.options then
                     game.save.options.custom_char_index = currentIndex
                 end
+
                 applyPlayerSprites()
+
             elseif payload.key == "use_shortcuts" then
                 shortcutsEnabled = payload.value
+
             elseif payload.key == "use_hide_lua" then
                 useHideLua = payload.value
+
                 loadCharacters()
+
                 applyPlayerSprites()
             end
         end
@@ -449,15 +505,26 @@ return function(mod)
                 local w = drawable:getWidth()
                 local c_scale, c_x, c_y = 1.0, 0, 0
                 
-                if w >= 60 then
-                    c_scale = SCALE_64
-                    c_x = OFFSET_X_64
-                    c_y = OFFSET_Y_64
-                elseif w >= 40 then
-                    c_scale = SCALE_48
-                    c_x = OFFSET_X_48
-                    c_y = OFFSET_Y_48
-                end
+               if w == 56 then
+				c_scale = SCALE_56
+				c_x = OFFSET_X_56
+				c_y = OFFSET_Y_56
+
+			elseif w == 40 then
+				c_scale = SCALE_40
+				c_x = OFFSET_X_40
+				c_y = OFFSET_Y_40
+
+			elseif w == 64 then
+				c_scale = SCALE_64
+				c_x = OFFSET_X_64
+				c_y = OFFSET_Y_64
+
+			elseif w == 48 then
+				c_scale = SCALE_48
+				c_x = OFFSET_X_48
+				c_y = OFFSET_Y_48
+			end
 
                 local arg1 = select(1, ...)
                 if type(arg1) == "userdata" and arg1.typeOf and arg1:typeOf("Quad") then
