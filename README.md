@@ -100,11 +100,10 @@ For example files, check the `assets` folder.
 
 Can be used to hide specific sprites. Extract the file to edit it.
 
-All sprites are commented out, which means all are selectable.
+Select the sprites you want to hide and remove the comment.
+A sprite which is commented out with  `--` will NOT be hidden and selectable ingame.
 
-Remove `--` to hide this sprite option ingame.
-
-For example: if you don't want to swim on land you remove the `--` in front of `"seel",` and `"swimmer",`.
+For example: if you want to swim on land you add `--` in front of `"seel",` or `"swimmer",`.
 
 ### Editing `hide.lua`
 
