@@ -34,6 +34,10 @@ Can be toggled in the mod options menu.
 ---
 ## Option 1: Use Crystal Clear Sprite Sheets + Converter
 
+<p align="center">
+<img src="https://i.imgur.com/muC6M5f.png">
+</p>
+
 *Take a Crystal Clear Sprite Sheet and generate assets automatically*
 
 https://inject.sigkill.tech/injector/sprite
