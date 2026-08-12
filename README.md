@@ -37,6 +37,7 @@ Can be toggled in the mod options menu.
 ## Option 2: Cutting existing Sprite Sheets
 
 *Take any sprite sheet and divide it into separate assets to use them ingame.*
+(see [Sprite Naming & Dimensions](#sprite-naming--dimensions))
 
 <p align="center">
   <img src="https://i.imgur.com/aOGaTzs.png">
@@ -51,6 +52,7 @@ Can be toggled in the mod options menu.
 
 ## Option 3: Creating own Sprites
 
+(see [Sprite Naming & Dimensions](#sprite-naming--dimensions))
 asdasdasasdas
 
 
