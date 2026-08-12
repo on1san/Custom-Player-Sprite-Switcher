@@ -42,7 +42,7 @@ Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes they ha
 
 > https://inject.sigkill.tech/injector/sprite
 
-Click "USE PUBLIC TEMPLATE". There are over 1500 Sprite Sheets to choose from.
+Scroll down and click "USE PUBLIC TEMPLATE". There are over 1500 Sprite Sheets to choose from.
 
 After downloading spritesheets you like use CCSS Converter to convert them to gen1recomp assets.
 
