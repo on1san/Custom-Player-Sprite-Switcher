@@ -13,12 +13,11 @@ The GIF shows the effect ingame when pressing a shortcut button.
 
 ## Features
 
-* Change your overworld player sprite in real time.
+* Change your overworld player sprite with the press of a button.
 * Change your Trainer Card Image.
 * Change your Player back sprite.
 * Change your Fishing sprite.
 * Change your cycling sprite.
-* Real-time switching with shortcuts
 
   Bonus:
 * Play as NPCs.
