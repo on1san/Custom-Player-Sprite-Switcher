@@ -197,3 +197,5 @@ This means you can play as any NPC which walks around in the overworld.
 ## Credits
 
 Leaf Sprites by Molly
+
+Rick Sprites by Bani
