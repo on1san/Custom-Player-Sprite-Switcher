@@ -30,6 +30,13 @@ The GIF shows the effect ingame when pressing a shortcut button.
 Can be toggled in the mod options menu.
 
 ---
+## Option 1: Use Crystal Clear Sprite Sheets + Converter
+
+## Option 2: Cutting existing Sprite Sheets
+
+## Option 3: Creating own Sprites
+
+
 
 *Take a sprite sheet and divide it into separate assets to use them ingame.*
 
@@ -44,7 +51,6 @@ Can be toggled in the mod options menu.
 <img src="https://i.imgur.com/jtI7nm1.jpeg">
 </p>
 
-*The ingame colors depend on the coloring used in the options menu.*
 
 ## Sprite Naming & Dimensions
 
