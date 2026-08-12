@@ -1,9 +1,9 @@
 return {
-	--"beauty",
 	--"brunette_girl",
 	--"cooltrainer_f",
 	--"giovanni",
     --"girl",
+	"beauty",
     "agatha",
     "bird",
     "biker",

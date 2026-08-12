@@ -247,14 +247,14 @@ return function(mod)
             key = "use_hide_lua",
             type = "toggle",
             label = "HIDE.LUA",
-            default = true,
+            default = useHideLua,
             help = "Toggles hide.lua"
         },
         {
             key = "use_shortcuts",
             type = "toggle",
             label = "PGUP/PGDN SWITCH",
-            default = false,
+            default = shortcutsEnabled,
             help = "Toggles shortcut"
         }
     })
