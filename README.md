@@ -67,8 +67,15 @@ Take any sprite sheet and divide it into separate assets to use them ingame (see
 
 ## Option 3: Creating own Sprites
 
-Create assets individually or use the Sample Template from https://inject.sigkill.tech/injector/sprite to import your spritesheet with https://crystal-clear-converter.netlify.app.
-(see [Sprite Naming & Dimensions](#sprite-naming--dimensions))
+Create assets individually by yourself (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+
+Or use the Sample Template from 
+
+> https://inject.sigkill.tech/injector/sprite 
+
+to import your own spritesheet with 
+
+> https://crystal-clear-converter.netlify.app.
 
 
 ## Sprite Naming & Dimensions
