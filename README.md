@@ -32,11 +32,9 @@ Can be toggled in the mod options menu.
 ---
 ## Option 1: Use Crystal Clear Sprite Sheets + Converter
 
+*Take a Crystaö Clear Sprite Sheet and generate assets automatically*
+
 ## Option 2: Cutting existing Sprite Sheets
-
-## Option 3: Creating own Sprites
-
-
 
 *Take a sprite sheet and divide it into separate assets to use them ingame.*
 
@@ -50,6 +48,10 @@ Can be toggled in the mod options menu.
 <p align="center">
 <img src="https://i.imgur.com/jtI7nm1.jpeg">
 </p>
+
+## Option 3: Creating own Sprites
+
+asdasdasasdas
 
 
 ## Sprite Naming & Dimensions
