@@ -39,10 +39,9 @@ Can be toggled in the mod options menu.
   <img src="https://i.imgur.com/ilGNNwE.png">
   <img src="https://i.imgur.com/ZpznmkK.png">
 </p>
-<img src="https://i.imgur.com/jtI7nm1.jpeg">
 
 <p align="center">
- <img src="https://i.imgur.com/3lLcHPq.png">
+<img src="https://i.imgur.com/jtI7nm1.jpeg">
 </p>
 
 *The ingame colors depend on the coloring used in the options menu.*
