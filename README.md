@@ -114,7 +114,7 @@ For example: if you want to swim on land you add `--` in front of `"seel",` or `
 
 * To make the changes visible: close the game, remove the mod and install it again.
 
-## Available NPC Sprites
+## Available NPC Overworld Sprites
 
 In Version 1.0, all 6 tile sprites extracted from the ROM are used.
 
