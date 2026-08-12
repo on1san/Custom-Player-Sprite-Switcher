@@ -34,6 +34,8 @@ Can be toggled in the mod options menu.
 
 *Take a Crystal Clear Sprite Sheet and generate assets automatically*
 
+<a href="https://inject.sigkill.tech/injector/sprite>Test</a>
+
 ## Option 2: Cutting existing Sprite Sheets
 
 *Take any sprite sheet and divide it into separate assets to use them ingame (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).*
