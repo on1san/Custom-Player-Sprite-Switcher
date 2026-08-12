@@ -38,7 +38,7 @@ Can be toggled in the mod options menu.
 <img src="https://i.imgur.com/muC6M5f.png">
 </p>
 
-*Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes it has a lot of white space*
+Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes it has a lot of white space
 
 https://inject.sigkill.tech/injector/sprite
 
@@ -48,7 +48,7 @@ After downloading spritesheets you like use https://crystal-clear-converter.netl
 
 ## Option 2: Cutting existing Sprite Sheets
 
-*Take any sprite sheet and divide it into separate assets to use them ingame (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).*
+Take any sprite sheet and divide it into separate assets to use them ingame (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
 
 <p align="center">
   <img src="https://i.imgur.com/aOGaTzs.png">
