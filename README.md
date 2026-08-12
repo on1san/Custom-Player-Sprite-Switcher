@@ -78,7 +78,7 @@ Add `_back` to the filename, like `leaf_back.png`.
 
 This is the player sprite you see when starting a battle.
 
-### Fishing Sprites (`3 different files: `16x8px`)
+### Fishing Sprites (`3 different files: 16x8px each`)
 
 Add `_fish_side, fish_front, fish_back` to the filenames, like `leaf_fish_side.png, leaf_fish_front.png, leaf_fish_back.png`.
 
