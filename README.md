@@ -1,5 +1,7 @@
 # Custom Player Sprite Switcher
 
+**GEN1RECOMP MOD**
+
 **Overworld On-the-Fly Sprite Changer**
 
 Change your player sprite in real time.
@@ -37,6 +39,8 @@ Can be toggled in the mod options menu.
 https://inject.sigkill.tech/injector/sprite
 
 Click "USE PUBLIC TEMPLATE". There are over 1500 Sprite Sheets to choose from.
+
+After downloading spritesheets you like use https://crystal-clear-converter.netlify.app/ to convert them to gen1recomp assets.
 
 ## Option 2: Cutting existing Sprite Sheets
 
