@@ -46,16 +46,6 @@ Can be toggled in the mod options menu.
  <img src="https://i.imgur.com/3lLcHPq.png">
 </p>
 
-## Mod Options
-
-* **CHARACTER SPRITE** — Selects the Character sprites used.
-* **HIDE.LUA** — Enables/Disables the `hide.lua` file, which contains sprites to hide.
-* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
-
-<p align="center">
-  <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
-</p>
-
 ## Sprite Naming & Dimensions
 
 ### Overworld / Walking (`16x96px`)
@@ -88,7 +78,6 @@ Add `_fish_side, fish_front, fish_back` to the filenames, like `leaf_fish_side.p
 
 This is the player sprite when using a fishing rod.
 
-
 ### Adding Sprites
 
 To add sprites, add them to the `assets` folder in the .zip archive..
@@ -96,6 +85,16 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 * To make the changes visible: close the game, remove the mod and install it again.
 
   For example files, check the `assets` folder.
+
+  ## Mod Options
+
+* **CHARACTER SPRITE** — Selects the Character sprites used.
+* **HIDE.LUA** — Enables/Disables the `hide.lua` file, which contains sprites to hide.
+* **PGUP/PGDN SWITCH** — Enables/Disables the shortcut buttons.
+
+<p align="center">
+  <img src="https://i.imgur.com/EsO5iWQ.png" alt="OTF Player Switcher in-game options">
+</p>
 
 ## `hide.lua`
 
