@@ -60,28 +60,29 @@ Can be toggled in the mod options menu.
 
 * **Overworld:** `16x96px`
 * **Front:** `56x56px`
+* **Front:** `40x56px`
 * **Back:** `48x48px`
 * **Back:** `32x32px`
 
-## Sprite Naming
+## Sprite Naming & Dimensions
 
 For example files, check the `assets` folder.
 
-### Overworld
+### Overworld (`16x96px`)
 
-Use the name of the character, like `leaf`.
+Use the name of the character, like `leaf.png`.
 
 This is the character you walk around with.
 
 ### Front
 
-Add `_front` to the filename, like `leaf_front`.
+Add `_front` to the filename, like `leaf_front.png`.
 
 This is the image on the Trainer Card.
 
 ### Back
 
-Add `_back` to the filename, like `leaf_back`.
+Add `_back` to the filename, like `leaf_back.png`.
 
 This is the player sprite you see when starting a battle.
 
