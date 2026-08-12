@@ -55,8 +55,8 @@ Click "USE PUBLIC TEMPLATE". There are over 1500 Sprite Sheets to choose from.
 
 ## Option 3: Creating own Sprites
 
+Create assets individually or use the Sample Template from https://inject.sigkill.tech/injector/sprite to import your spritesheet with https://crystal-clear-converter.netlify.app.
 (see [Sprite Naming & Dimensions](#sprite-naming--dimensions))
-asdasdasasdas
 
 
 ## Sprite Naming & Dimensions
