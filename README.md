@@ -40,11 +40,11 @@ Can be toggled in the mod options menu.
 
 Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes it has a lot of white space
 
-***
 
-# https://inject.sigkill.tech/injector/sprite
 
-***
+## https://inject.sigkill.tech/injector/sprite
+
+
 
 Click "USE PUBLIC TEMPLATE". There are over 1500 Sprite Sheets to choose from.
 
