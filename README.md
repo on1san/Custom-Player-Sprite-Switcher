@@ -36,7 +36,7 @@ Can be toggled in the mod options menu.
 
 ## Option 2: Cutting existing Sprite Sheets
 
-*Take a sprite sheet and divide it into separate assets to use them ingame.*
+*Take any sprite sheet and divide it into separate assets to use them ingame.*
 
 <p align="center">
   <img src="https://i.imgur.com/aOGaTzs.png">
