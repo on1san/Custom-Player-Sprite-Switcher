@@ -109,7 +109,7 @@ For example: if you want to swim on land you add `--` in front of `"seel",` or `
 ### Editing `hide.lua`
 
 1. Extract `hide.lua` from the `.zip` archive.
-2. Edit the file to hide specific sprites.
+2. Edit the file to hide or show specific sprites.
 3. Overwrite `hide.lua` in the `.zip` archive.
 
 * To make the changes visible: close the game, remove the mod and install it again.
