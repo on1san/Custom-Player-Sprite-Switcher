@@ -58,8 +58,6 @@ Can be toggled in the mod options menu.
 
 ## Sprite Naming & Dimensions
 
-For example files, check the `assets` folder.
-
 ### Overworld / Walking (`16x96px`)
 
 Use the name of the character, like `leaf.png`.
@@ -96,6 +94,8 @@ This is the player sprite when using a fishing rod.
 To add sprites, add them to the `assets` folder in the .zip archive..
 
 * To make the changes visible: close the game, remove the mod and install it again.
+
+  For example files, check the `assets` folder.
 
 ## `hide.lua`
 
