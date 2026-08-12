@@ -1,6 +1,6 @@
 # Custom Player Sprite Switcher
 
-**GEN1RECOMP MOD**
+**GEN1RECOMP MOD** (not yet tested with Gold)
 
 **Overworld On-the-Fly Sprite Changer**
 
