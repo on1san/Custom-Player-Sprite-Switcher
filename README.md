@@ -60,19 +60,25 @@ Can be toggled in the mod options menu.
 
 For example files, check the `assets` folder.
 
-### Overworld (`16x96px`)
+### Overworld / Walking (`16x96px`)
 
 Use the name of the character, like `leaf.png`.
 
 This is the character you walk around with.
 
-### Front (`40x56px` or `56x56px`)
+### Cycling / Bike (`16x96px`)
+
+Add `_bike` to the filename, like `leaf_bike.png`.
+
+This is the player sprite you see when using the bicycle.
+
+### Front / Trainer Card (`40x56px` or `56x56px`)
 
 Add `_front` to the filename, like `leaf_front.png`.
 
 This is the image on the Trainer Card.
 
-### Back (`48x48px` or `32x32px`)
+### Back / Battle (`48x48px` or `32x32px`)
 
 Add `_back` to the filename, like `leaf_back.png`.
 
