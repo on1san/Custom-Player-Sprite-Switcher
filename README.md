@@ -38,7 +38,7 @@ Can be toggled in the mod options menu.
 <img src="https://i.imgur.com/muC6M5f.png">
 </p>
 
-Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes it has a lot of white space
+Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes they have a lot of white space.
 
 > https://inject.sigkill.tech/injector/sprite
 
