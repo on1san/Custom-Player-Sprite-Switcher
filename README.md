@@ -118,7 +118,7 @@ For example: if you want to swim on land you add `--` in front of `"seel",` or `
 
 In Version 1.0, all 6 tile sprites extracted from the ROM are used.
 
-The overworld spritesheets contain 6 X 16x16 sprites in a single `.png` image. These files are located in the `sprites` and `battle/trainers` folders of `gen1recomp`.
+The overworld spritesheets contain `6 X 16x16` sprites in a single `.png` image (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)). These files are located in the `sprites` and `battle/trainers` folders of `gen1recomp`.
 
 This means you can play as any NPC which walks around in the overworld. This also means additional sprites in this format inside the `asset` folder will appear in the mod spritelist.
 
