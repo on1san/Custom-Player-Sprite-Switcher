@@ -42,7 +42,7 @@ Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes it has 
 
 ***
 
-https://inject.sigkill.tech/injector/sprite
+# https://inject.sigkill.tech/injector/sprite
 
 ***
 
