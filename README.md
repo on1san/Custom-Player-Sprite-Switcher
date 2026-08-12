@@ -8,19 +8,20 @@
 
 Change your player sprite in real time.
 
-Can also be used to switch Trainer Card Image and Player Back Sprite.
-
 This is an easy way to try out custom sprites or to play with different characters.
 The GIF shows the effect ingame when pressing a shortcut button.
 
 ## Features
 
 * Change your overworld player sprite in real time.
-* Switch your Trainer Card Image.
-* Switch your Player Back Sprite.
-* Use custom sprites.
+* Change your Trainer Card Image.
+* Change your Player back sprite.
+* Change your Fishing sprite.
+* Change your cycling sprite.
+* Real-time switching with shortcuts
+
+  Bonus:
 * Play as NPCs.
-* Switch sprites using <kbd>PageUp</kbd> and <kbd>PageDown</kbd>.
 
 ## Shortcuts
 
