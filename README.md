@@ -35,11 +35,9 @@ An easy way to try out custom sprites or to play with different characters.
 
 ## Features
 
-* Change your overworld player sprite with the press of a button.
-* Change your Trainer Card Image.
-* Change your Player back sprite.
-* Change your Fishing sprite.
-* Change your cycling sprite.
+* This mod makes it possible to change the following sprites:
+* Test
+* test
 
   Bonus:
 * Play as NPCs.
