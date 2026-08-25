@@ -84,11 +84,9 @@ After downloading some Spritesheets use **Crystal Clear Spritesheet Converter** 
 
 ## Option 2: Creating own Spritesheets
 
-Create assets individually by yourself (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+Use the Template from:
 
-Or use the Sample Template from 
-
-> https://inject.sigkill.tech/injector/sprite
+> [https://crystal-clear-converter.netlify.app/template-gen1recomp.png](https://crystal-clear-converter.netlify.app)
 
 to import your own spritesheet with 
 
