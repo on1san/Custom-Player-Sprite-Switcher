@@ -146,7 +146,42 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 
 * To make the changes visible: close the game, remove the mod and install it again.
 
-For example files, check the `assets` folder.
+
+
+
+.
+├── custom-player-sprite-switcher
+│   ├── assets
+│   │   ├── ash
+│   │   │   ├── back_bw.png
+│   │   │   ├── back_color.png
+│   │   │   ├── bike_bw.png
+│   │   │   ├── bike_color.png
+│   │   │   ├── fish_back_bw.png
+│   │   │   ├── fish_back_color.png
+│   │   │   ├── fish_front_bw.png
+│   │   │   ├── fish_front_color.png
+│   │   │   ├── fish_side_bw.png
+│   │   │   ├── fish_side_color.png
+│   │   │   ├── front_bw.png
+│   │   │   ├── front_color.png
+│   │   │   ├── walk_bw.png
+│   │   │   └── walk_color.png
+│   │   ├── leaf
+│   │   │   ├── back_bw.png
+│   │   │   ├── back_color.png
+│   │   │   ├── bike_bw.png
+│   │   │   ├── bike_color.png
+│   │   │   ├── fish_back_bw.png
+│   │   │   ├── fish_back_color.png
+│   │   │   ├── fish_front_bw.png
+│   │   │   ├── fish_front_color.png
+│   │   │   ├── fish_side_bw.png
+│   │   │   ├── fish_side_color.png
+│   │   │   ├── front_bw.png
+│   │   │   ├── front_color.png
+│   │   │   ├── walk_bw.png
+│   │   │   └── walk_color.png
 
 <!---
 
