@@ -3,7 +3,7 @@
 **GEN1RECOMP MOD (for use with https://crystal-clear-converter.netlify.app)**
 
 Changes your player sprite in real time.
-An easy way to try out custom sprites or to play with different characters.
+Use existing Spritesheets or create your own!
 
 ## Features
 
