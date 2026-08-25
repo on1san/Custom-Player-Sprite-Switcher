@@ -76,7 +76,7 @@ Do not crop them and do not change the dimensions!
 
 There are over 1300 Sprite Sheets to choose from.
 
-After downloading some Spritesheets use Crystal Clear Spritesheet Converter to convert them to gen1recomp assets.
+After downloading some Spritesheets use **Crystal Clear Spritesheet Converter** to convert them to gen1recomp assets.
 
 > https://crystal-clear-converter.netlify.app/
 
