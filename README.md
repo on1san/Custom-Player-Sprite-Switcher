@@ -84,9 +84,11 @@ Take any sprite sheet and divide it into separate assets to use them ingame (see
 
 <p align="center">
   <img width="30%" src="https://i.imgur.com/aOGaTzs.png">
-  <img width="20%"src="https://i.imgur.com/S5Tz8Wa.png">
-  <img width="20%"src="https://i.imgur.com/ilGNNwE.png">
   <img height="20%"src="https://i.imgur.com/ZpznmkK.png">
+  <img width="20%"src="https://i.imgur.com/ilGNNwE.png">
+  <img width="20%"src="https://i.imgur.com/S5Tz8Wa.png">
+  
+ 
 </p>
 
 <p align="center">
