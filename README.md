@@ -6,6 +6,18 @@ Change your player sprite in real time.
 
 An easy way to try out custom sprites or to play with different characters.
 
+## Features
+
+**This mod makes it possible to change the following sprites:**
+* Overworld Walking Sprite
+* Trainercard Front Sprite
+* Battle Back Sprite
+* Fishing Sprites (Gen2 doesnt have fishing animations)
+
+**Experimental:**
+* Biking Sprites (the normal animation will be "running")
+* Play as NPCs.
+  
 <p align="center">
    <img width="32.5%" src="https://i.imgur.com/1i9F8WJ.png">
    <img width="32.5%" src="https://i.imgur.com/W4idG7L.png"> 
@@ -41,17 +53,7 @@ An easy way to try out custom sprites or to play with different characters.
 </p>
 
 
-## Features
 
-**This mod makes it possible to change the following sprites:**
-* Overworld Walking Sprite
-* Trainercard Front Sprite
-* Battle Back Sprite
-* Fishing Sprites (Gen2 doesnt have fishing animations)
-
-**Experimental:**
-* Biking Sprites (the normal animation will be "running")
-* Play as NPCs.
 
 ## Shortcuts
 
