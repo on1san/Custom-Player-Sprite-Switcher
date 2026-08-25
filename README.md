@@ -96,7 +96,7 @@ The Front- and Backsprites can use all 4 colors.
 
 Walking and Fishing Sprites should only use Black + 2 Custom colors!
 
-Then import your own spritesheet with 
+Import your own spritesheet with 
 
 > https://crystal-clear-converter.netlify.app.
 
