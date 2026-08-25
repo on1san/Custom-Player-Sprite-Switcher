@@ -14,7 +14,7 @@ An easy way to try out custom sprites or to play with different characters.
 
 <p align="center">
   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
-   <img width="33%" src="https://i.imgur.com/y50A4cT.png">
+   <img width="33%" src="https://i.imgur.com/PYrJI3d.png">
    <img width="33%" src="https://i.imgur.com/ZKxJ94u.png">
 </p>
 
