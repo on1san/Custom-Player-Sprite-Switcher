@@ -7,9 +7,9 @@ Change your player sprite in real time.
 An easy way to try out custom sprites or to play with different characters.
 
 <p align="center">
- <img width="33%" src="https://i.imgur.com/P4Pb81r.png">
    <img width="33%" src="https://i.imgur.com/1i9F8WJ.png">
-   <img width="33%" src="https://i.imgur.com/W4idG7L.png">
+   <img width="33%" src="https://i.imgur.com/W4idG7L.png"> 
+   <img width="33%" src="https://i.imgur.com/P4Pb81r.png">
 </p>
 
 <p align="center">
