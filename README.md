@@ -19,6 +19,13 @@ An easy way to try out custom sprites or to play with different characters.
 </p>
 
 
+<p align="center">
+  <img width="33%" src="https://i.imgur.com/y50A4cT.png">
+   <img width="33%" src="https://i.imgur.com/KK0bWFv.png">
+   <img width="33%" src="https://i.imgur.com/PYrJI3d.png">
+</p>
+
+
 ## Features
 
 * Change your overworld player sprite with the press of a button.
