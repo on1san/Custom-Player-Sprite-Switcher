@@ -66,7 +66,7 @@ Use existing Spritesheets or create your own!
 
 Download some Crystal Clear Spritesheets and generate assets automatically 
 
-(Yes they have a lot of white space)
+Do not crop them or change the dimensions!
 
 > https://crystal-clear-converter.netlify.app/sprites
 > 
