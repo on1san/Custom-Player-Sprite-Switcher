@@ -102,9 +102,11 @@ Then import your own spritesheet with
 
 ---
 
-## Option 3: Using existing sprites
+## Option 3: Using existing Sprites
 
-Take any custom sprites and put them into a folder named like your character (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+Take any custom sprites and put them into a folder named like your character (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)) or put the assets in the correct position of the template from
+
+> [https://crystal-clear-converter.netlify.app/template-gen1recomp.png](https://crystal-clear-converter.netlify.app/template-gen1recomp.png)
 
 <p align="center">
   <img width="30%" src="https://i.imgur.com/aOGaTzs.png">
