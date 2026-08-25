@@ -154,7 +154,9 @@ This is the player sprite you see when starting a battle.
 This is the player sprite when using a fishing rod (there is no rod in Gen 2).
 
 `fish_side` =>  `fish_side_bw.png` & `fish_side_color.png`
+
 `fish_front` =>  `fish_front_bw.png` & `fish_front_color.png`
+
 `fish_back` =>  `fish_back_bw.png` & `fish_back_color.png`
 
 
