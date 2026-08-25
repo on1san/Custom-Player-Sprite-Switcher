@@ -11,8 +11,8 @@ The GIF shows the effect ingame when pressing a shortcut button.
 
 <p align="center">
   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
-   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
-   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
+   <img width="33%" src="https://i.imgur.com/y50A4cT.png">
+   <img width="33%" src="https://i.imgur.com/ZKxJ94u.png">
 </p>
 
 ## Features
