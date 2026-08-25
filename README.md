@@ -151,7 +151,7 @@ This is the player sprite you see when starting a battle.
 
 ### Fishing Sprites (`3 different files: 16x8px each`)
 
-This is the player sprite when using a fishing rod (there is no rod in Gen 2).
+This is the player sprite when using a fishing rod (there is no rod in gen1recomp Gen 2).
 
 `fish_side` =>  `fish_side_bw.png` & `fish_side_color.png`
 
