@@ -74,7 +74,7 @@ Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes they ha
 
 There are over 1300 Sprite Sheets to choose from.
 
-After downloading spritesheets you like use Crystal Clear Spritesheet Converter (CCSS Converter) to convert them to gen1recomp assets.
+After downloading spritesheets you like use Crystal Clear Spritesheet Converter to convert them to gen1recomp assets.
 
 > https://crystal-clear-converter.netlify.app/
 
