@@ -148,7 +148,7 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 
 
 
-
+```
 .
 ├── custom-player-sprite-switcher
 │   ├── assets
@@ -183,6 +183,7 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 │   │   │   ├── walk_bw.png
 │   │   │   └── walk_color.png
 
+```
 <!---
 
 ## Mod Options
