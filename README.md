@@ -80,7 +80,7 @@ After downloading spritesheets you like use Crystal Clear Spritesheet Converter 
 
 ## Option 2: Cutting existing Sprite Sheets
 
-Take any sprite sheet and divide it into separate assets to use them ingame (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+Take any custom sprites and put them into a folder named like your character (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
 
 <p align="center">
   <img width="30%" src="https://i.imgur.com/aOGaTzs.png">
