@@ -127,6 +127,12 @@ Or put the assets in the correct position of the template from:
 
 ## Sprite Naming & Dimensions
 
+### Gen 1 / Gen 2 ###
+
+Gen 1 sprites will use the suffix _bw.
+
+Gen 2 sprites will use the suffix _color.
+
 ### Overworld / Walking (`16x96px`)
 
 Use the name of the character, like `leaf.png`.
@@ -157,12 +163,9 @@ Add `_fish_side, fish_front, fish_back` to the filenames, like `leaf_fish_side.p
 
 This is the player sprite when using a fishing rod.
 
-### Adding Sprites
-
-To add sprites, add them to the `assets` folder in the .zip archive..
+### Folder Structure
 
 * To make the changes visible: close the game, remove the mod and install it again.
-
 
 
 ```
