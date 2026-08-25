@@ -71,7 +71,7 @@ Do not crop them and do not change the dimensions!
 > https://crystal-clear-converter.netlify.app/sprites
 > 
 <p align="center">
-<img src="https://i.imgur.com/muC6M5f.png">
+<img src="https://i.imgur.com/tX8Z7fm.png">
 </p>
 
 There are over 1300 Sprite Sheets to choose from.
