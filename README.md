@@ -1,8 +1,6 @@
 # Custom Player Sprite Switcher (RBY / GSC compatible)
 
-**GEN1RECOMP MOD**
-
-**for use with https://crystal-clear-converter.netlify.app**
+**GEN1RECOMP MOD (for use with https://crystal-clear-converter.netlify.app)**
 
 **Overworld On-the-Fly Sprite Changer**
 
