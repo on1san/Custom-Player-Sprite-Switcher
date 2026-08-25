@@ -104,7 +104,7 @@ Then import your own spritesheet with
 
 ## Option 3: Using existing Sprites
 
-Take any custom sprites and put them into a folder named like your character (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+Take any custom sprites and put them into a folder named like your character. Then use the correct naming schema (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
 
 Or put the assets in the correct position of the template from:
 
