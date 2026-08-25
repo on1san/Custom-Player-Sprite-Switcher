@@ -83,10 +83,10 @@ After downloading spritesheets you like use Crystal Clear Spritesheet Converter 
 Take any sprite sheet and divide it into separate assets to use them ingame (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
 
 <p align="center">
-  <img width="50%" src="https://i.imgur.com/aOGaTzs.png">
-  <img width="50%"src="https://i.imgur.com/S5Tz8Wa.png">
-  <img width="50%"src="https://i.imgur.com/ilGNNwE.png">
-  <img width="50%"src="https://i.imgur.com/ZpznmkK.png">
+  <img width="20%" src="https://i.imgur.com/aOGaTzs.png">
+  <img width="20%"src="https://i.imgur.com/S5Tz8Wa.png">
+  <img width="20%"src="https://i.imgur.com/ilGNNwE.png">
+  <img width="20%"src="https://i.imgur.com/ZpznmkK.png">
 </p>
 
 <p align="center">
