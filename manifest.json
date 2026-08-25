@@ -1,0 +1,14 @@
+{
+  "id": "custom-player-sprites",
+  "name": "Custom Player Sprites",
+  "category": "GRAPHICS",
+  "priority": 100,
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "version": "2.0",
+  "entry": "main.lua",
+  "api": 2,
+  "games": ["gen1", "gen2"],
+  "description": "Real-time Player Sprite Switcher. Also changes Trainer Card / Back / Bike / Fishing Sprites. Shortcuts - PageUp PageDown. Ingame Menu included."
+}
