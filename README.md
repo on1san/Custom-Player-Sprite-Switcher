@@ -88,7 +88,11 @@ Use the Template from:
 
 > [https://crystal-clear-converter.netlify.app/template-gen1recomp.png](https://crystal-clear-converter.netlify.app/template-gen1recomp.png)
 
-to import your own spritesheet with 
+Adjust the "Injecting" palette to match your character. 
+
+You should only use Black + White + 2 Custom colors!
+
+Then import your own spritesheet with 
 
 > https://crystal-clear-converter.netlify.app.
 
