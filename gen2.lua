@@ -239,13 +239,16 @@ return function(mod)
         }
     })
 
-    local function getPicPath(info, picType)
+
+
+
+local function getPicPath(info, picType)
         if not info then return nil end
 
         if info.isCustom then
             local searchType = picType
             if searchType == "card" then searchType = "front" end
-        
+            
             local relColor = info.folderPath .. "/" .. searchType .. "_color.png"
             local relBw = info.folderPath .. "/" .. searchType .. "_bw.png"
             
@@ -256,6 +259,13 @@ return function(mod)
             
             if mod:info(relColor) then return mod.assets:path(relColor) end
             if mod:info(relBw) then return mod.assets:path(relBw) end
+            
+            -- NEU: Wenn kein Custom-Bild existiert, zwingen wir den Code,
+            -- das korrekte Vanilla-Bild zu laden, statt auf den Spielstand zurückzufallen!
+            if picType == "back" then
+                if info.name:lower() == "kris" then return Config.KRIS_BACK end
+                if info.name:lower() == "chris" then return Config.CHRIS_BACK end
+            end
         else
             local basePaths = getBasePaths(defaultPlayerName == "kris")
             
@@ -275,6 +285,10 @@ return function(mod)
                 if mod:info(relColor) then return mod.assets:path(relColor) end
                 if mod:info(relBw) then return mod.assets:path(relBw) end
                 
+                -- NEU: Verhindert auch hier das falsche Fallback auf den Standard-Charakter
+                if info.name:lower() == "kris" then return Config.KRIS_BACK end
+                if info.name:lower() == "chris" then return Config.CHRIS_BACK end
+                
                 return basePaths.back
             elseif picType == "walk" then
                 return Config.OVERWORLD_SPRITES .. info.name .. Config.FILE_EXT
@@ -285,6 +299,10 @@ return function(mod)
         
         return nil
     end
+
+
+
+
 
     local function getCharAndFallback()
         local charInfo = CHARACTER_LIST[currentIndex]
@@ -397,9 +415,12 @@ return function(mod)
                     hd_paths[customPath] = not isGenerated
                 end
                 
-                -- WICHTIG: Das Bild MUSS trueColor haben, sonst übermalt der Shader des Spiels 
-                -- deine blaue Farbe sofort wieder mit der aktiven Braun-Palette!
-                if customPath:match("_color%.png$") or (charInfo.isCustom and not isGenerated) or picType == "back" then
+                -- Erkennt zuverlässig, ob es sich um Kris handelt
+                local isFemaleBack = customPath:match("kris") or customPath:match("female") or customPath:match("player_back_female") or customPath:match("_f_") or customPath:match("_f%.png$")
+                
+                -- ctx.trueColor zwingt die Engine, das Bild so zu lassen, wie es ist.
+                -- Das machen wir NUR bei Custom-Bildern und bei Kris. Chris erhält 'nil'.
+                if customPath:match("_color%.png$") or (charInfo.isCustom and not isGenerated) or (picType == "back" and isFemaleBack) then
                     ctx.trueColor = true
                 else
                     ctx.trueColor = nil
@@ -717,16 +738,7 @@ return function(mod)
     if not love.graphics._hdNewImageHookedGen2 then
         love.graphics._hdNewImageHookedGen2 = true
         
-        local orig_newImageData = love.image.newImageData
-        love.image.newImageData = function(filename, ...)
-            local id = orig_newImageData(filename, ...)
-            if type(filename) == "string" and hd_paths[filename] then
-                hd_paths_data[id] = true
-            end
-            return id
-        end
-
-        local orig_newImage = love.graphics.newImage
+       local orig_newImage = love.graphics.newImage
         love.graphics.newImage = function(data, ...)
             local img
             
@@ -735,22 +747,21 @@ return function(mod)
                                       data:match("trainer_card/card%.png$") or data:match("trainer_card/card_f%.png$") or 
                                       data:match("trainer_card\\card%.png$") or data:match("trainer_card\\card_f%.png$")
                 
-                local isBackSprite = data:match("player_back") or data:match("_back_bw%.png$")
+                -- Prüft streng, ob es sich um Kris oder einen weiblichen Custom-Sprite handelt
+                local isFemaleBack = data:match("player_back_female") or (data:match("_back_bw%.png$") and (data:match("kris") or data:match("female") or data:match("_f_")))
                 
-               if isBackSprite then
+                -- Die Blaue Farbe wird NUR bei Kris angewendet
+                if isFemaleBack then
                     local ok, imgData = pcall(love.image.newImageData, data)
                     if ok then
                         imgData:mapPixel(function(x, y, r, g, b, a)
                             if a > 0.1 then
-                                -- Dunkelgrau (#3828f8): Heller als Schwarz (>0.1) und dunkler als Hellgrau (<0.5)
                                 if r > 0.1 and r < 0.5 and g > 0.1 and g < 0.5 and b > 0.1 and b < 0.5 then
                                     return 56/255, 40/255, 248/255, a
-                                -- Hellgrau (#d88870): Heller als Dunkelgrau (>=0.5) und dunkler als Weiß (<0.95)
                                 elseif r >= 0.5 and r < 0.95 and g >= 0.5 and g < 0.95 and b >= 0.5 and b < 0.95 then
                                     return 216/255, 136/255, 112/255, a
                                 end
                             end
-                            -- Alles andere (Schwarz, Weiß, Transparent) bleibt unberührt!
                             return r, g, b, a
                         end)
                         img = orig_newImage(imgData, ...)
@@ -758,6 +769,7 @@ return function(mod)
                         img = orig_newImage(data, ...)
                     end
                 else
+                    -- Chris wird unangetastet geladen!
                     img = orig_newImage(data, ...)
                 end
                 
