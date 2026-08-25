@@ -133,33 +133,30 @@ Gen 1 sprites will use the suffix `_bw` - Gen 2 sprites will use the suffix `_co
 
 ### Overworld / Walking (`16x96px`)
 
- `walk` =>  `walk_bw`  `walk_color`
-
-This is the character you walk around with.
-
-### Cycling / Bike (`16x96px`)
-
-Add `_bike` to the filename, like `leaf_bike.png`.
-
-This is the player sprite you see when using the bicycle.
+This is the character you walk around with in the overworld.
+ `walk` =>  `walk_bw.png` & `walk_color.png`
 
 ### Front / Trainer Card (`40x56px` or `56x56px`)
 
-Add `_front` to the filename, like `leaf_front.png`.
-
 This is the image on the Trainer Card.
+ `front` =>  `front_bw.png` & `front_color.png`
 
 ### Back / Battle (`48x48px` or `32x32px`)
 
-Add `_back` to the filename, like `leaf_back.png`.
-
 This is the player sprite you see when starting a battle.
+`back` =>  `back_bw.png` & `back_color.png`
 
 ### Fishing Sprites (`3 different files: 16x8px each`)
 
 Add `_fish_side, fish_front, fish_back` to the filenames, like `leaf_fish_side.png, leaf_fish_front.png, leaf_fish_back.png`.
 
 This is the player sprite when using a fishing rod.
+
+### Cycling / Bike (`16x96px`)
+
+ `bike` =>  `bike_bw.png` & `bike_color.png`
+
+This is the player sprite you see when using the bicycle.
 
 ### Folder Structure
 
