@@ -86,7 +86,7 @@ After downloading some Spritesheets use **Crystal Clear Spritesheet Converter** 
 
 Use the Template from:
 
-> [https://crystal-clear-converter.netlify.app/template-gen1recomp.png](https://crystal-clear-converter.netlify.app)
+> [https://crystal-clear-converter.netlify.app/template-gen1recomp.png](https://crystal-clear-converter.netlify.app/template-gen1recomp.png)
 
 to import your own spritesheet with 
 
