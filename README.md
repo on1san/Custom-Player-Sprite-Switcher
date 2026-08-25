@@ -64,13 +64,13 @@ Use existing Spritesheets or create your own!
 ---
 ## Option 1: Use Crystal Clear Sprite Sheets + Converter
 
-<p align="center">
-<img src="https://i.imgur.com/muC6M5f.png">
-</p>
-
 Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes they have a lot of white space.
 
 > https://crystal-clear-converter.netlify.app/sprites
+> 
+<p align="center">
+<img src="https://i.imgur.com/muC6M5f.png">
+</p>
 
 There are over 1300 Sprite Sheets to choose from.
 
