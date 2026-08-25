@@ -59,7 +59,7 @@ An easy way to try out custom sprites or to play with different characters.
 * <kbd>PageUp</kbd> — Switch to the previous sprite
 * <kbd>PageDown</kbd> — Switch to the next sprite
 
-** There is also a Custom Menu (press start) **
+**There is also a Custom Menu (press start)**
 
 ---
 ## Option 1: Use Crystal Clear Sprite Sheets + Converter
