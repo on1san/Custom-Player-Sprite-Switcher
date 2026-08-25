@@ -225,9 +225,3 @@ This means you can play as any NPC which walks around in the overworld.
 * waiter
 * youngster
 -->
-
-## Credits
-
-Leaf Sprites by Molly
-
-Rick Sprites by Bani
