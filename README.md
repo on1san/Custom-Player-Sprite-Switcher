@@ -18,10 +18,10 @@ An easy way to try out custom sprites or to play with different characters.
    <img width="33%" src="https://i.imgur.com/ZKxJ94u.png">
 </p>
 
-<p align="center">
+<p align="center"> 
+<img width="33%" src="https://i.imgur.com/Dg8dUoQ.png">
   <img width="33%" src="https://i.imgur.com/B2r155g.png">
    <img width="33%" src="https://i.imgur.com/3t2nSCB.png">
-   <img width="33%" src="https://i.imgur.com/Dg8dUoQ.png">
 </p>
 
 
