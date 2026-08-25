@@ -90,7 +90,7 @@ Take any sprite sheet and divide it into separate assets to use them ingame (see
 </p>
 
 <p align="center">
-   <img width="76%" src="https://i.imgur.com/jtI7nm1.jpeg">
+   <img width="75.8%" src="https://i.imgur.com/jtI7nm1.jpeg">
 </p>
 
 ---
