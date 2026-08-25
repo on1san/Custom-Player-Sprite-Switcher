@@ -35,7 +35,7 @@ An easy way to try out custom sprites or to play with different characters.
 
 ## Features
 
-**This mod makes it possible to change the following sprites:
+**This mod makes it possible to change the following sprites:**
 * Overworld Walking Sprite
 * Trainercard Front Sprite
 * Battle Back Sprite
