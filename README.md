@@ -71,9 +71,9 @@ An easy way to try out custom sprites or to play with different characters.
 
 Take a Crystal Clear Sprite Sheet and generate assets automatically. Yes they have a lot of white space.
 
-> https://inject.sigkill.tech/injector/sprite
+> https://crystal-clear-converter.netlify.app/sprites
 
-Scroll down and click **"USE PUBLIC TEMPLATE"**. There are over 1500 Sprite Sheets to choose from.
+There are over 1300 Sprite Sheets to choose from.
 
 After downloading spritesheets you like use Crystal Clear Spritesheet Converter (CCSS Converter) to convert them to gen1recomp assets.
 
