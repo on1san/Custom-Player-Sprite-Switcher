@@ -94,7 +94,7 @@ You should only use Black + White + 2 Custom colors!
 
 The Front- and Backsprites can use all 4 colors.
 
-Walking and Fishing Sprites should only use White for transparency.
+Walking and Fishing Sprites should only use Black + 2 Custom colors!
 
 Then import your own spritesheet with 
 
