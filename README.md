@@ -80,7 +80,23 @@ After downloading some Spritesheets use **Crystal Clear Spritesheet Converter** 
 
 > https://crystal-clear-converter.netlify.app/
 
-## Option 2: Cutting existing Sprite Sheets
+---
+
+## Option 2: Creating own Spritesheets
+
+Create assets individually by yourself (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
+
+Or use the Sample Template from 
+
+> https://inject.sigkill.tech/injector/sprite
+
+to import your own spritesheet with 
+
+> https://crystal-clear-converter.netlify.app.
+
+---
+
+## Option 3: Using existing sprites
 
 Take any custom sprites and put them into a folder named like your character (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
 
@@ -96,19 +112,7 @@ Take any custom sprites and put them into a folder named like your character (se
    <img width="50%" src="https://i.imgur.com/jtI7nm1.jpeg">
 </p>
 
----
 
-## Option 3: Creating own Sprites
-
-Create assets individually by yourself (see [Sprite Naming & Dimensions](#sprite-naming--dimensions)).
-
-Or use the Sample Template from 
-
-> https://inject.sigkill.tech/injector/sprite
-
-to import your own spritesheet with 
-
-> https://crystal-clear-converter.netlify.app.
 
 
 ## Sprite Naming & Dimensions
