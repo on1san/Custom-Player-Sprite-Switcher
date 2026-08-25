@@ -129,11 +129,11 @@ Or put the assets in the correct position of the template from:
 
 ### Gen 1 / Gen 2 Distinction ###
 
-Gen 1 sprites will use the suffix `_bw` / Gen 2 sprites will use the suffix `_color`.
+Gen 1 sprites will use the suffix `_bw` - Gen 2 sprites will use the suffix `_color`.
 
 ### Overworld / Walking (`16x96px`)
 
-Use the name of the character, like `leaf.png`.
+ `walk` =>  `walk_bw`  `walk_color`
 
 This is the character you walk around with.
 
