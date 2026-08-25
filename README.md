@@ -134,16 +134,19 @@ Gen 1 sprites will use the suffix `_bw` - Gen 2 sprites will use the suffix `_co
 ### Overworld / Walking (`16x96px`)
 
 This is the character you walk around with in the overworld.
+
  `walk` =>  `walk_bw.png` & `walk_color.png`
 
 ### Front / Trainer Card (`40x56px` or `56x56px`)
 
 This is the image on the Trainer Card.
+
  `front` =>  `front_bw.png` & `front_color.png`
 
 ### Back / Battle (`48x48px` or `32x32px`)
 
 This is the player sprite you see when starting a battle.
+
 `back` =>  `back_bw.png` & `back_color.png`
 
 ### Fishing Sprites (`3 different files: 16x8px each`)
