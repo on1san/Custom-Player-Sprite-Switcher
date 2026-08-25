@@ -10,7 +10,7 @@ An easy way to try out custom sprites or to play with different characters.
 The GIF shows the effect ingame when pressing a shortcut button.
 
 <p align="center">
-  <img src="https://i.imgur.com/Oj1pFyY.gif" alt="OTF Player Switcher in-game demonstration">
+  <img src="https://i.imgur.com/Z4WyzMz.png">
 </p>
 
 ## Features
