@@ -148,7 +148,8 @@ To add sprites, add them to the `assets` folder in the .zip archive..
 
 For example files, check the `assets` folder.
 
-/*
+<!---
+
 ## Mod Options
 
 * **CHARACTER SPRITE** — Selects the Character sprites used.
@@ -223,7 +224,7 @@ This means you can play as any NPC which walks around in the overworld.
 * swimmer
 * waiter
 * youngster
-
+-->
 
 ## Credits
 
