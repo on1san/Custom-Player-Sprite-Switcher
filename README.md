@@ -2,6 +2,8 @@
 
 **GEN1RECOMP MOD**
 
+**for use with https://crystal-clear-converter.netlify.app**
+
 **Overworld On-the-Fly Sprite Changer**
 
 Change your player sprite in real time.
