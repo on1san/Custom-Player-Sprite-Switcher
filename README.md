@@ -35,11 +35,14 @@ An easy way to try out custom sprites or to play with different characters.
 
 ## Features
 
-* This mod makes it possible to change the following sprites:
-* Test
-* test
+**This mod makes it possible to change the following sprites:
+* Overworld Walking Sprite
+* Trainercard Front Sprite
+* Battle Back Sprite
+* Fishing Sprites (Gen2 doesnt have fishing animations)
+* Biking Sprites (the normal animation will be "running")
 
-  Bonus:
+  Experimental:
 * Play as NPCs.
 
 ## Shortcuts
