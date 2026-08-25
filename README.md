@@ -127,11 +127,9 @@ Or put the assets in the correct position of the template from:
 
 ## Sprite Naming & Dimensions
 
-### Gen 1 / Gen 2 ###
+### Gen 1 / Gen 2 Distinction ###
 
-Gen 1 sprites will use the suffix _bw.
-
-Gen 2 sprites will use the suffix _color.
+Gen 1 sprites will use the suffix _bw / Gen 2 sprites will use the suffix _color.
 
 ### Overworld / Walking (`16x96px`)
 
