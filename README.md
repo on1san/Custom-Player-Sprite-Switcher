@@ -92,6 +92,10 @@ Adjust the "Injecting" palette to match your character.
 
 You should only use Black + White + 2 Custom colors!
 
+The Front- and Backsprites can use all 4 colors.
+
+Walking and Fishing Sprites should only use White for transparency.
+
 Then import your own spritesheet with 
 
 > https://crystal-clear-converter.netlify.app.
