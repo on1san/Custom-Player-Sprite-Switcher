@@ -49,9 +49,9 @@ An easy way to try out custom sprites or to play with different characters.
 * Trainercard Front Sprite
 * Battle Back Sprite
 * Fishing Sprites (Gen2 doesnt have fishing animations)
-* Biking Sprites (the normal animation will be "running")
 
   Experimental:
+* Biking Sprites (the normal animation will be "running")
 * Play as NPCs.
 
 ## Shortcuts
