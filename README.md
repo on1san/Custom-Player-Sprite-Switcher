@@ -12,11 +12,13 @@ An easy way to try out custom sprites or to play with different characters.
    <img width="33%" src="https://i.imgur.com/P4Pb81r.png">
 </p>
 
+
 <p align="center">
   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
     <img width="33%" src="https://i.imgur.com/y50A4cT.png"> 
    <img width="33%" src="https://i.imgur.com/ZKxJ94u.png">
 </p>
+
 
 <p align="center"> 
 <img width="33%" src="https://i.imgur.com/Dg8dUoQ.png">
@@ -31,11 +33,11 @@ An easy way to try out custom sprites or to play with different characters.
    <img width="33%" src="https://i.imgur.com/PYrJI3d.png">
 </p>
 
+
 <p align="center">  
    <img width="33%" src="https://i.imgur.com/v04wHKS.png">
-  <img width="33%" src="https://i.imgur.com/eG56MiN.png">
 <img width="33%" src="https://i.imgur.com/iMN0Dlx.png">
- 
+   <img width="33%" src="https://i.imgur.com/eG56MiN.png">
 </p>
 
 
