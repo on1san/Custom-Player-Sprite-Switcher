@@ -162,9 +162,9 @@ This is the player sprite when using a fishing rod (there is no rod in gen1recom
 
 ### Cycling / Bike (`16x96px`)
 
- `bike` =>  `bike_bw.png` & `bike_color.png`
-
 This is the player sprite you see when using the bicycle.
+
+ `bike` =>  `bike_bw.png` & `bike_color.png`
 
 ### Folder Structure
 
