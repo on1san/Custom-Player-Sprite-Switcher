@@ -1,13 +1,12 @@
-# Custom Player Sprite Switcher
+# Custom Player Sprite Switcher (RBY / GSC compatible)
 
-**GEN1RECOMP MOD** (not yet tested with Gold)
+**GEN1RECOMP MOD**
 
 **Overworld On-the-Fly Sprite Changer**
 
 Change your player sprite in real time.
 
 An easy way to try out custom sprites or to play with different characters.
-The GIF shows the effect ingame when pressing a shortcut button.
 
 <p align="center">
   <img width="33%" src="https://i.imgur.com/Z4WyzMz.png">
