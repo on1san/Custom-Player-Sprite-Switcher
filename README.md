@@ -50,7 +50,7 @@ An easy way to try out custom sprites or to play with different characters.
 * Battle Back Sprite
 * Fishing Sprites (Gen2 doesnt have fishing animations)
 
-  Experimental:
+**Experimental:**
 * Biking Sprites (the normal animation will be "running")
 * Play as NPCs.
 
