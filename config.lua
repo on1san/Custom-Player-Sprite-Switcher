@@ -45,9 +45,7 @@ Config.CHRIS_BIKE = Config.OVERWORLD_SPRITES .. "chris_bike.png"
 Config.CHRIS_FRONT = Config.BASE_GENERATED .. "trainer_card/card.png"
 Config.CHRIS_BACK = Config.BASE_GENERATED .. "battle/player_back.png"
 
-Config.CHRIS_FISH_BACK = Config.BASE_GENERATED .. "fx/chris_fish_back.png" 		-- file doesnt exist -- fx folder doesnt exist
-Config.CHRIS_FISH_FRONT = Config.BASE_GENERATED .. "fx/chris_fish_front.png" 	-- file doesnt exist -- fx folder doesnt exist
-Config.CHRIS_FISH_SIDE = Config.BASE_GENERATED .. "fx/chris_fish_side.png" 		-- file doesnt exist -- fx folder doesnt exist
+Config.CHRIS_FISH_BACK = Config.BASE_GENERATED .. "emotes/fishing.png"
 
 --------------------------------------------------------------------------------
 
@@ -56,17 +54,17 @@ Config.KRIS_BIKE = Config.OVERWORLD_SPRITES .. "kris_bike.png"
 Config.KRIS_FRONT = Config.BASE_GENERATED .. "trainer_card/card_f.png"
 Config.KRIS_BACK = Config.BASE_GENERATED .. "battle/player_back_female.png"
 
-Config.KRIS_FISH_BACK = Config.BASE_GENERATED .. "fx/kris_fish_back.png" 	-- file doesnt exist -- fx folder doesnt exist
-Config.KRIS_FISH_FRONT = Config.BASE_GENERATED .. "fx/kris_fish_front.png" 	-- file doesnt exist -- fx folder doesnt exist
-Config.KRIS_FISH_SIDE = Config.BASE_GENERATED .. "fx/kris_fish_side.png" 	-- file doesnt exist -- fx folder doesnt exist
+Config.KRIS_FISH_BACK = Config.BASE_GENERATED .. "emotes/fishing_female.png"
 
 
 --------------------------------------
 -- MOD FILE NAMING RULES & SUFFIXES --
 --------------------------------------
 
-Config.SUFFIX_GEN1 = "_bw"
+--Config.SUFFIX_GEN1 = "_bw"
+Config.SUFFIX_GEN1 = "_color"
 Config.SUFFIX_GEN2 = "_color"
+
 Config.FILE_EXT = ".png"
 
 Config.CUSTOM_CHAR_FILES = {
@@ -407,11 +405,9 @@ return Config
 --         |-- bike_bw.png                   
 --         |-- bike_color.png                
 --         |-- fish_back_bw.png              
---         |-- fish_back_color.png           
 --         |-- fish_front_bw.png             
---         |-- fish_front_color.png          
 --         |-- fish_side_bw.png              
---         L__ fish_side_color.png           
+--         L__ fish_color.png           
 --
 -- -------------------------------------------------------------------------
 --

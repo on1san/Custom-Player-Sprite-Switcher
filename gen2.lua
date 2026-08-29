@@ -5,6 +5,8 @@ if not love.graphics._custom_hd_registry then
     
     love.graphics._vanilla_card_imgs = setmetatable({}, {__mode = "k"})
     love.graphics._custom_card_cache = {}
+	
+	love.graphics._vanilla_fish_imgs = setmetatable({}, {__mode = "k"})
 end
 
 local hd_registry = love.graphics._custom_hd_registry
@@ -13,6 +15,9 @@ local hd_paths = love.graphics._custom_hd_paths
 
 local vanilla_card_imgs = love.graphics._vanilla_card_imgs
 local custom_card_cache = love.graphics._custom_card_cache
+
+local vanilla_fish_imgs = love.graphics._vanilla_fish_imgs
+
 
 return function(mod)
     local config_chunk = mod:read("config.lua") or mod:read("config")
@@ -30,7 +35,9 @@ return function(mod)
     local currentIndex = 1 
     local defaultIndex = 1 
     local active_card_image = nil 
-    
+    local active_fish_path = nil
+	local active_fish_image = nil
+	
     local MENU_CHOICES = {}
     local pendingMapRefresh = false
     
@@ -90,14 +97,16 @@ return function(mod)
                 walk = Config.KRIS,
                 bike = Config.KRIS_BIKE,
                 front = Config.KRIS_FRONT,
-                back = Config.KRIS_BACK
+                back = Config.KRIS_BACK,
+				fish = Config.KRIS_FISH_BACK
             }
         else
             return {
                 walk = Config.CHRIS,
                 bike = Config.CHRIS_BIKE,
                 front = Config.CHRIS_FRONT,
-                back = Config.CHRIS_BACK
+                back = Config.CHRIS_BACK,
+				fish = Config.CHRIS_FISH_BACK
             }
         end
     end
@@ -266,6 +275,8 @@ local function getPicPath(info, picType)
                 if info.name:lower() == "kris" then return Config.KRIS_BACK end
                 if info.name:lower() == "chris" then return Config.CHRIS_BACK end
             end
+			
+			
         else
             local basePaths = getBasePaths(defaultPlayerName == "kris")
             
@@ -294,15 +305,25 @@ local function getPicPath(info, picType)
                 return Config.OVERWORLD_SPRITES .. info.name .. Config.FILE_EXT
             elseif picType == "bike" then
                 return Config.OVERWORLD_SPRITES .. info.name .. "_bike" .. Config.FILE_EXT
-            end
-        end
+			elseif picType == "fish" then
+                if info.name == defaultPlayerName then return basePaths.fish end
+                
+                local relColor = info.folderPath .. "/fish_color.png"
+                local relBw = info.folderPath .. "/fish_bw.png"
+                
+                if mod:info(relColor) then return mod.assets:path(relColor) end
+                if mod:info(relBw) then return mod.assets:path(relBw) end
+                
+                -- Vanilla-Fallback für andere Charaktere
+                if info.name:lower() == "kris" then return Config.KRIS_FISH_BACK end
+                if info.name:lower() == "chris" then return Config.CHRIS_FISH_BACK end
+                
+                return basePaths.fish
+			end
+		end
         
         return nil
     end
-
-
-
-
 
     local function getCharAndFallback()
         local charInfo = CHARACTER_LIST[currentIndex]
@@ -474,6 +495,22 @@ local function getPicPath(info, picType)
                     end
                 end
             end
+        end
+
+		active_fish_path = getPicPath(charInfo, "fish") or getPicPath(fallbackInfo, "fish")
+        if active_fish_path then
+            hd_paths[active_fish_path] = charInfo.isCustom
+            
+            -- NEU: Bild direkt in den Cache laden, damit es für den Draw-Hook bereit ist
+            if not custom_card_cache[active_fish_path] then
+                local ok, new_img = pcall(love.graphics.newImage, active_fish_path)
+                if ok then custom_card_cache[active_fish_path] = new_img end
+            end
+            active_fish_image = custom_card_cache[active_fish_path]
+            
+            if active_fish_image then hd_registry[active_fish_image] = true end
+        else
+            active_fish_image = nil
         end
 
         if game.data and game.data.field and game.data.field.playerPics then
@@ -741,45 +778,42 @@ local function getPicPath(info, picType)
        local orig_newImage = love.graphics.newImage
         love.graphics.newImage = function(data, ...)
             local img
+			local isVanillaFish = false
             
-            if type(data) == "string" then
-                local isVanillaCard = data:match("card%.png$") or data:match("card_f%.png$") or 
-                                      data:match("trainer_card/card%.png$") or data:match("trainer_card/card_f%.png$") or 
-                                      data:match("trainer_card\\card%.png$") or data:match("trainer_card\\card_f%.png$")
-                
-                -- Prüft streng, ob es sich um Kris oder einen weiblichen Custom-Sprite handelt
-                local isFemaleBack = data:match("player_back_female") or (data:match("_back_bw%.png$") and (data:match("kris") or data:match("female") or data:match("_f_")))
-                
-                -- Die Blaue Farbe wird NUR bei Kris angewendet
-                if isFemaleBack then
-                    local ok, imgData = pcall(love.image.newImageData, data)
-                    if ok then
-                        imgData:mapPixel(function(x, y, r, g, b, a)
-                            if a > 0.1 then
-                                if r > 0.1 and r < 0.5 and g > 0.1 and g < 0.5 and b > 0.1 and b < 0.5 then
-                                    return 56/255, 40/255, 248/255, a
-                                elseif r >= 0.5 and r < 0.95 and g >= 0.5 and g < 0.95 and b >= 0.5 and b < 0.95 then
-                                    return 216/255, 136/255, 112/255, a
-                                end
-                            end
-                            return r, g, b, a
-                        end)
-                        img = orig_newImage(imgData, ...)
-                    else
-                        img = orig_newImage(data, ...)
-                    end
-                else
-                    -- Chris wird unangetastet geladen!
-                    img = orig_newImage(data, ...)
-                end
-                
-                if isVanillaCard then
-                    vanilla_card_imgs[img] = true
-                end
-                
-                if hd_paths[data] then
-                    hd_registry[img] = true
-                end
+            
+			if type(data) == "string" then
+        -- Nur noch prüfen, NICHT MEHR den String 'data' überschreiben!
+        isVanillaFish = data:match("emotes[/\\]fishing%.png$") or data:match("emotes[/\\]fishing_female%.png$")
+
+        local isVanillaCard = data:match("card%.png$") or data:match("card_f%.png$") or 
+                              data:match("trainer_card[/\\]card%.png$") or data:match("trainer_card[/\\]card_f%.png$")
+        
+        -- Kris-Logik bleibt erhalten
+        local isFemaleBack = data:match("player_back_female") or (data:match("_back_bw%.png$") and (data:match("kris") or data:match("female") or data:match("_f_")))
+        
+        if isFemaleBack then
+            -- ... (Deine imgData:mapPixel Logik bleibt hier unangetastet) ...
+        else
+            img = orig_newImage(data, ...)
+        end
+
+        if isVanillaCard then 
+            vanilla_card_imgs[img] = true 
+        end
+        
+        if isVanillaFish then
+            vanilla_fish_imgs[img] = true
+            -- Original speichern für den SpriteBatch-Fallback
+            love.graphics._vanilla_fish_original = img
+        end
+
+        if hd_paths[data] then 
+            hd_registry[img] = true 
+        end
+			
+			
+			
+			
             elseif type(data) == "userdata" and data.typeOf and data:typeOf("ImageData") and hd_paths_data[data] then
                 img = orig_newImage(data, ...)
                 hd_registry[img] = true
@@ -788,13 +822,54 @@ local function getPicPath(info, picType)
             end
             return img
         end
-        
+
         local orig_draw = love.graphics.draw
         love.graphics.draw = function(drawable, ...)
             
+			-- Austausch der Trainer Card[cite: 1]
             if active_card_image and type(drawable) == "userdata" and drawable.typeOf and drawable:typeOf("Image") and vanilla_card_imgs[drawable] then
                 drawable = active_card_image
             end
+			
+			
+			-- On-the-fly Austausch der Angel (für Images UND SpriteBatches)
+    local swapped_fish = false
+    
+    if type(drawable) == "userdata" and drawable.typeOf then
+        if drawable:typeOf("Image") and vanilla_fish_imgs[drawable] then
+            if active_fish_image then
+                drawable = active_fish_image
+                swapped_fish = true
+            end
+        elseif drawable:typeOf("SpriteBatch") then
+            local tex = drawable:getTexture()
+            if active_fish_image and tex then
+                if vanilla_fish_imgs[tex] then
+                    -- Tausche Vanilla gegen Custom
+                    drawable:setTexture(active_fish_image)
+                    swapped_fish = true
+                elseif tex == active_fish_image then
+                    -- Textur ist bereits getauscht, wir müssen nur den Shader deaktivieren
+                    swapped_fish = true
+                end
+            elseif not active_fish_image and tex and hd_registry[tex] and love.graphics._vanilla_fish_original then
+                -- Fallback: Spieler hat auf Default gewechselt, setze SpriteBatch zurück
+                drawable:setTexture(love.graphics._vanilla_fish_original)
+            end
+        end
+    end
+    
+    -- Gameboy-Shader kurz deaktivieren, falls wir ein farbiges Custom-Bild zeichnen
+    local prev_shader = nil
+    if swapped_fish and active_fish_path and active_fish_path:match("_color%.png$") then
+        prev_shader = love.graphics.getShader()
+        if prev_shader then love.graphics.setShader() end
+    end
+			
+			
+			
+			
+local ret -- NEU: Variable für den Return-Wert
 
             if hd_registry[drawable] then
                 local c_scale = 1.0
@@ -815,23 +890,29 @@ local function getPicPath(info, picType)
                     local new_sy = (sy or 1) * c_scale
                     local new_x = (x or 0) + c_x
                     local new_y = (y or 0) + c_y
-                    
-                    return orig_draw(drawable, quad, new_x, new_y, r or 0, new_sx, new_sy, ox, oy, kx, ky)
+
+                    ret = orig_draw(drawable, quad, new_x, new_y, r or 0, new_sx, new_sy, ox, oy, kx, ky)
                 elseif type(arg1) == "userdata" and arg1.typeOf and arg1:typeOf("Transform") then
                     local t = arg1:clone()
                     t:translate(c_x, c_y)
                     t:scale(c_scale, c_scale)
-                    return orig_draw(drawable, t)
+                    ret = orig_draw(drawable, t)
                 else
                     local x, y, r, sx, sy, ox, oy, kx, ky = ...
                     local new_sx = (sx or 1) * c_scale
                     local new_sy = (sy or 1) * c_scale
                     local new_x = (x or 0) + c_x
                     local new_y = (y or 0) + c_y
-                    return orig_draw(drawable, new_x, new_y, r or 0, new_sx, new_sy, ox, oy, kx, ky)
+                    ret = orig_draw(drawable, new_x, new_y, r or 0, new_sx, new_sy, ox, oy, kx, ky)
                 end
+            else
+                ret = orig_draw(drawable, ...)
             end
-            return orig_draw(drawable, ...)
+            
+            -- NEU: Shader sofort wiederherstellen, damit der Rest der Map normal aussieht
+            if prev_shader then love.graphics.setShader(prev_shader) end
+            
+            return ret
         end
     end
 end

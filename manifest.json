@@ -6,9 +6,9 @@
   "dependencies": [],
   "optional_dependencies": [],
   "conflicts": [],
-  "version": "2.02",
+  "version": "2.1",
   "entry": "main.lua",
   "api": 2,
   "games": ["gen1", "gen2"],
-  "description": "Real-time Player Sprite Switcher. Also changes Trainer Card / Back / Bike / Fishing Sprites. Shortcuts - PageUp PageDown. Ingame Menu included."
+  "description": "website - crystal-clear-converter.netlify.app - Custom Player Sprite Switcher. Shortcuts - PageUp PageDown. Ingame Menu included."
 }
