@@ -5,6 +5,15 @@
 Changes your player sprite in real time.
 Use existing Spritesheets or create your own!
 
+## Preinstalled Sprites:
+* _(Leaf - by Bani / Molly)_
+* Ash - by Bani
+* Misty - by Pyles
+* Brock - by CrazyMaxx96
+* Blue - by blankets
+* Silver - by MegaBlueAce
+* Joy - by trainerlass
+
 ## Features
 
 **This mod makes it possible to change the following sprites:**
@@ -47,8 +56,6 @@ Use existing Spritesheets or create your own!
 <img width="32.5%" src="https://i.imgur.com/iMN0Dlx.png">
    <img width="32.5%" src="https://i.imgur.com/eG56MiN.png">
 </p>
-
-
 
 
 ## Shortcuts
@@ -120,8 +127,6 @@ Or put the assets in the correct position of the template from:
 </p>
 
 
-
-
 ## Sprite Naming & Dimensions
 
 ### Gen 1 / Gen 2 Distinction ###
@@ -132,38 +137,42 @@ Gen 1 sprites will use the suffix `_bw` - Gen 2 sprites will use the suffix `_co
 
 This is the character you walk around with in the overworld.
 
- `walk` =>  `walk_bw.png` & `walk_color.png`
+ `walk` => `walk_bw.png` & `walk_color.png`
 
 ### Front / Trainer Card (`40x56px` or `56x56px`)
 
 This is the image on the Trainer Card.
 
- `front` =>  `front_bw.png` & `front_color.png`
+ `front` => `front_bw.png` & `front_color.png`
 
 ### Back / Battle (`48x48px` or `32x32px`)
 
 This is the player sprite you see when starting a battle.
 
-`back` =>  `back_bw.png` & `back_color.png`
+`back` => `back_bw.png` & `back_color.png`
 
 ### Fishing Sprites (`3 different files: 16x8px each`)
 
-This is the player sprite when using a fishing rod (there is no rod in gen1recomp Gen 2).
+This is the player sprite when using a fishing rod - Gen2 only.
 
 Only changes the bottom half of your character.
 
+`fish` => `fish_color.png`
+```
 `fish_side` =>  `fish_side_bw.png` & `fish_side_color.png`
 
 `fish_front` =>  `fish_front_bw.png` & `fish_front_color.png`
 
 `fish_back` =>  `fish_back_bw.png` & `fish_back_color.png`
-
+```
 
 ### Cycling / Bike (`16x96px`)
 
 This is the player sprite you see when using the bicycle.
 
- `bike` =>  `bike_bw.png` & `bike_color.png`
+By default a spritesheet uses the same animation as walking, but custom bike sprites are supported.
+
+ `bike` => `bike_bw.png` & `bike_color.png`
 
 ### Folder Structure
 
