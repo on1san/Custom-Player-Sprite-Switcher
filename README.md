@@ -75,12 +75,14 @@ Do not crop them and do not change the dimensions (800x300px)!
 > https://crystal-clear-converter.netlify.app/sprites
 > 
 <p align="center">
-<img src="https://i.imgur.com/tX8Z7fm.png">
+<img src="https://i.imgur.com/GxOmXND.png">
 </p>
 
 There are over 1300 Sprite Sheets to choose from.
 
 After downloading some Spritesheets use **Crystal Clear Spritesheet Converter** to convert them to gen1recomp assets.
+
+Then add the character folders to the zipped mods assets folder and install the mod.
 
 > https://crystal-clear-converter.netlify.app/
 
@@ -100,9 +102,11 @@ The Front- and Backsprites can use all 4 colors.
 
 Walking and Fishing Sprites should only use Black + 2 Custom colors!
 
-Import your own spritesheet with 
+Convert your own spritesheet into gen1recomp assets with 
 
 > https://crystal-clear-converter.netlify.app.
+
+Then add the character folders to the zipped mods assets folder and install the mod.
 
 ---
 
