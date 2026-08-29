@@ -11,11 +11,8 @@ Use existing Spritesheets or create your own!
 * Overworld Walking Sprite
 * Trainercard Front Sprite
 * Battle Back Sprite
-* Fishing Sprites (Gen2 doesnt have fishing animations)
-
-**Experimental:**
+* Fishing Sprites - Gen2
 * Biking Sprites (the normal animation will be "running")
-* Play as NPCs.
   
 <p align="center">
    <img width="32.5%" src="https://i.imgur.com/1i9F8WJ.png">
