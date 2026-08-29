@@ -220,4 +220,4 @@ By default a spritesheet uses the same animation as walking, but custom bike spr
 
 ```
 
-<img width="100%" src="https://i.imgur.com/9UpLmaO.png/>
+<img width="100%" src="https://i.imgur.com/9UpLmaO.png"/>
