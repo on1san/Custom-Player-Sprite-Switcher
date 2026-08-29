@@ -219,3 +219,5 @@ By default a spritesheet uses the same animation as walking, but custom bike spr
 │   │   │   └── walk_color.png
 
 ```
+
+<img width="100%" src="https://i.imgur.com/9UpLmaO.png/>
