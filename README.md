@@ -1,4 +1,4 @@
-# Custom Player Sprite Switcher (RBY / GSC compatible)
+# Custom Player Sprites (RBY / GSC compatible)
 
 **GEN1RECOMP MOD (for use with https://crystal-clear-converter.netlify.app)**
 
